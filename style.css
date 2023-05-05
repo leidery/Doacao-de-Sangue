@@ -1,0 +1,159 @@
+/*Página inicial*/
+body{                            /*o body para todas as paginas*/
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+
+.menu{                             /*o mesmo menu que esta presente em todas as paginas*/
+  background-color: #e21717;
+  color: white;
+  display: flex;
+  justify-content: flex-end;
+  height: 55px;
+}
+
+.menu ul{
+  list-style: none;
+}
+.menu li{
+  display: inline-block;
+  margin-right: 30px;  /*distancia entre os itens do menu*/
+  color: white;
+}
+ 
+.conteudo1 h1{
+  text-align: center;
+}
+
+.conteudo1 section{
+  text-align: center;
+  padding: 15px;
+  width: 900px;
+  margin: auto;
+}
+
+.conteudo1 p{
+  text-align: justify;
+ 
+}
+
+#imagemInicial{
+  width: 650px;
+  max-width: 100%;
+  height: auto;
+ }
+
+.rodape1{
+
+}
+
+
+ /* página: Quem Somos*/
+ 
+.conteudo2 h1{
+  text-align: center;
+
+ }
+
+.conteudo2 section{
+  text-align: center;
+  padding: 15px;
+  width: 900px;
+  margin: auto;
+ }
+
+.conteudo2 p{
+  text-align: justify;
+ }
+
+.rodape2{
+
+ }
+ 
+
+ /* página: Contato*/
+.conteudo3 h1{
+  text-align: center;
+ }
+
+.conteudo3 section{
+  text-align: center;
+  padding: 15px;
+  width: 900px;
+  margin: auto;
+ }
+.conteudo3 p{
+  text-align: center;
+}
+
+.rodape3{
+
+}
+
+/*página: Perguntas frequentes*/
+
+.conteudo4 h3{
+  text-align: center;
+}
+ 
+
+.conteudo4 section{
+  padding: 9px;
+  width: 900px;
+  margin: auto;     /*arrumar o padding e coonteudo*/
+
+}
+
+.conteudo4 p {
+  font-size: 15px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.rodape4{
+
+}
+  
+
+/* página: Cadastro*/
+
+.cadastro h1{
+  text-align: center;
+}
+
+.cadastro section{
+  text-align: center;
+  padding: 15px;
+  width: 900px;
+  margin: auto;
+}
+
+.cadastro form{
+
+  /*pesquisar como estilizar um formulario*/
+  
+}
+
+.rodape-cadastro{
+  /*ver o que da pra colocar dentro*/
+}
+
+
+/* página: Login*/
+.login h1{
+  text-align: center;
+}
+
+.login section{
+  text-align: center;
+  padding: 15px;
+  width: 900px;
+  margin: auto;
+}
+
+.rodape-login{
+
+}
+
