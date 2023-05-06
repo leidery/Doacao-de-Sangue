@@ -5,13 +5,12 @@ body{                            /*o body para todas as paginas*/
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     
 }
-
 .menu{                             /*o mesmo menu que esta presente em todas as paginas*/
   background-color: #e21717;
   color: white;
-  display: flex;
-  justify-content: flex-end;
-  height: 55px;
+  display: flex;      /*container flexivel*/
+  justify-content:space-between;
+  padding: 10px;     /*espaço entre conteudo e bordas do proprio elemento*/
 }
 
 .menu ul{
@@ -19,7 +18,7 @@ body{                            /*o body para todas as paginas*/
 }
 .menu li{
   display: inline-block;
-  margin-right: 30px;  /*distancia entre os itens do menu*/
+  margin-right: 33px;  /*distancia entre os itens do menu*/
   color: white;
 }
  
@@ -42,12 +41,14 @@ body{                            /*o body para todas as paginas*/
 #imagemInicial{
   width: 650px;
   max-width: 100%;
-  height: auto;
  }
 
 .rodape1{
-
+  background-color: #e21717;
+  padding: 3px;
+  box-sizing: border-box;
 }
+
 
 
  /* página: Quem Somos*/
@@ -68,10 +69,6 @@ body{                            /*o body para todas as paginas*/
   text-align: justify;
  }
 
-.rodape2{
-
- }
- 
 
  /* página: Contato*/
 .conteudo3 h1{
@@ -88,13 +85,11 @@ body{                            /*o body para todas as paginas*/
   text-align: center;
 }
 
-.rodape3{
 
-}
 
 /*página: Perguntas frequentes*/
 
-.conteudo4 h3{
+.conteudo4 h1{
   text-align: center;
 }
  
@@ -102,7 +97,7 @@ body{                            /*o body para todas as paginas*/
 .conteudo4 section{
   padding: 9px;
   width: 900px;
-  margin: auto;     /*arrumar o padding e coonteudo*/
+  margin: auto;     
 
 }
 
@@ -112,10 +107,7 @@ body{                            /*o body para todas as paginas*/
   margin-bottom: 20px;
 }
 
-.rodape4{
 
-}
-  
 
 /* página: Cadastro*/
 
@@ -130,17 +122,6 @@ body{                            /*o body para todas as paginas*/
   margin: auto;
 }
 
-.cadastro form{
-
-  /*pesquisar como estilizar um formulario*/
-  
-}
-
-.rodape-cadastro{
-  /*ver o que da pra colocar dentro*/
-}
-
-
 /* página: Login*/
 .login h1{
   text-align: center;
@@ -152,8 +133,3 @@ body{                            /*o body para todas as paginas*/
   width: 900px;
   margin: auto;
 }
-
-.rodape-login{
-
-}
-
