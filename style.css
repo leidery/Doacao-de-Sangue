@@ -32,7 +32,7 @@ body {
   text-decoration: none;
 }
 
-.conteudo1 section {
+.conteudo1 {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -59,12 +59,7 @@ body {
 
 /* página: Quem Somos*/
 
-.conteudo2 h1 {
-  text-align: center;
-
-}
-
-.conteudo2 section {
+.conteudo2 {
   text-align: center;
   padding: 15px;
   width: 900px;
