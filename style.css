@@ -9,17 +9,18 @@ body{                            /*o body para todas as paginas*/
   background-color: #e21717;
   color: white;
   display: flex;      /*container flexivel*/
-  justify-content:space-between;
+  flex-wrap: wrap; 
+  justify-content: space-between; 
+  align-items: center;       
   padding: 10px;     /*espaço entre conteudo e bordas do proprio elemento*/
 }
 
-.menu ul{
-  list-style: none;
-}
 .menu li{
   display: inline-block;
   margin-right: 33px;  /*distancia entre os itens do menu*/
   color: white;
+  padding: 5px;
+  text-decoration: none;
 }
  
 .conteudo1 h1{
