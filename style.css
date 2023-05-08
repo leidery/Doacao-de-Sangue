@@ -53,39 +53,48 @@ body {
   max-width: 100%;
 }
 
-.rodape1 {
+.footer1 {
   background-color: #e21717;
   text-align: center;
   
 }
 
-.rodape1 p{
+.footer1 p{
   color: white;
 }
 
 /* página: Quem Somos*/
 
 .conteudo2 {
-  text-align: center;
-  padding: 15px;
-  width: 900px;
-  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: justify;
+  align-items: center;
+  padding: 30px;
+  flex: 1;
 }
 
-.conteudo2 p {
-  text-align: justify;
+
+.footer2{
+  background-color: #e21717;
+  text-align: center;
+}
+
+.footer2 p {
+  color:white;
 }
 
 /* página: Contato*/
-.conteudo3 h1 {
-  text-align: center;
-}
 
-.conteudo3 section {
-  text-align: center;
-  padding: 15px;
-  width: 900px;
-  margin: auto;
+.conteudo3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: justify;
+  align-items: center;
+  padding: 30px;
+  flex: 1;
 }
 
 .conteudo3 p {
