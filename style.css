@@ -97,8 +97,13 @@ body {
   flex: 1;
 }
 
-.conteudo3 p {
+.footer3{
+  background-color: #e21717;
   text-align: center;
+}
+
+.footer3 p {
+  color: white;
 }
 
 /*página: Perguntas frequentes*/
