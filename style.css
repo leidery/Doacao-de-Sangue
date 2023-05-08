@@ -3,8 +3,9 @@ body{                            /*o body para todas as paginas*/
   margin: 0;
   padding: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    
+  font-size: 16px;
 }
+
 .menu{                             /*o mesmo menu que esta presente em todas as paginas*/
   background-color: #e21717;
   color: white;
@@ -28,10 +29,12 @@ body{                            /*o body para todas as paginas*/
 }
 
 .conteudo1 section{
-  text-align: center;
-  padding: 15px;
-  width: 900px;
-  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: justify;
+  align-items: center;
+  padding: 40px;
 }
 
 .conteudo1 p{
@@ -42,6 +45,7 @@ body{                            /*o body para todas as paginas*/
 #imagemInicial{
   width: 650px;
   max-width: 100%;
+  height: auto;
  }
 
 .rodape1{
@@ -49,9 +53,6 @@ body{                            /*o body para todas as paginas*/
   padding: 3px;
   box-sizing: border-box;
 }
-
-
-
  /* página: Quem Somos*/
  
 .conteudo2 h1{
@@ -70,7 +71,6 @@ body{                            /*o body para todas as paginas*/
   text-align: justify;
  }
 
-
  /* página: Contato*/
 .conteudo3 h1{
   text-align: center;
@@ -85,15 +85,11 @@ body{                            /*o body para todas as paginas*/
 .conteudo3 p{
   text-align: center;
 }
-
-
-
 /*página: Perguntas frequentes*/
 
 .conteudo4 h1{
   text-align: center;
 }
- 
 
 .conteudo4 section{
   padding: 9px;
@@ -107,9 +103,6 @@ body{                            /*o body para todas as paginas*/
   line-height: 1.5;
   margin-bottom: 20px;
 }
-
-
-
 /* página: Cadastro*/
 
 .cadastro h1{
