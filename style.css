@@ -14,7 +14,6 @@ body {
   /*o mesmo menu que esta presente em todas as paginas*/
   background-color: #e21717;
   color: white;
-  /*container flexivel*/
   display: flex;
   /*quebrar para a proxima linha*/
   flex-wrap: wrap; 
@@ -108,21 +107,14 @@ body {
 
 /*página: Perguntas frequentes*/
 
-.conteudo4 h1 {
-  text-align: center;
-}
-
-.conteudo4 section {
-  padding: 9px;
-  width: 900px;
-  margin: auto;
-
-}
-
-.conteudo4 p {
-  font-size: 15px;
-  line-height: 1.5;
-  margin-bottom: 20px;
+.conteudo4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: justify;
+  align-items: center;
+  padding: 30px;
+  flex: 1;
 }
 
 .footer4{
@@ -136,18 +128,17 @@ body {
 
 /* página: Cadastro*/
 
-.cadastro h1 {
-  text-align: center;
+.cadastro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: justify;
+  align-items: center;
+  padding: 30px;
+  flex: 1;
 }
 
-.cadastro section {
-  text-align: center;
-  padding: 15px;
-  width: 900px;
-  margin: auto;
-}
-
-.footer5{
+.footer5 {
   background-color: #e21717;
   text-align: center;
 }
@@ -157,15 +148,15 @@ body {
 }
 
 /* página: Login*/
-.login h1 {
-  text-align: center;
-}
 
-.login section {
-  text-align: center;
-  padding: 15px;
-  width: 900px;
-  margin: auto;
+.login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: justify;
+  align-items: center;
+  padding: 30px;
+  flex: 1;
 }
 
 .footer6{
