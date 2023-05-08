@@ -125,6 +125,15 @@ body {
   margin-bottom: 20px;
 }
 
+.footer4{
+  background-color: #e21717;
+  text-align: center;
+}
+
+.footer4 p {
+  color:white;
+}
+
 /* página: Cadastro*/
 
 .cadastro h1 {
@@ -138,6 +147,15 @@ body {
   margin: auto;
 }
 
+.footer5{
+  background-color: #e21717;
+  text-align: center;
+}
+
+.footer5 p {
+  color:white;
+}
+
 /* página: Login*/
 .login h1 {
   text-align: center;
@@ -148,4 +166,13 @@ body {
   padding: 15px;
   width: 900px;
   margin: auto;
+}
+
+.footer6{
+  background-color: #e21717;
+  text-align: center;
+}
+
+.footer6 p {
+  color:white;
 }
