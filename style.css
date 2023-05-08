@@ -16,10 +16,11 @@ body {
   color: white;
   /*container flexivel*/
   display: flex;
-  flex-wrap: wrap;
+  /*quebrar para a proxima linha*/
+  flex-wrap: wrap; 
   justify-content: space-between;
   align-items: center;
-  /*espaço entre conteudo e bordas do proprio elemento*/
+  /*preeenchimento entre conteudo e bordas do proprio elemento*/
   padding: 10px;
 }
 
@@ -28,8 +29,7 @@ body {
   /*distancia entre os itens do menu*/
   margin-right: 33px;
   color: white;
-  padding: 5px;
-  text-decoration: none;
+  
 }
 
 .conteudo1 {
@@ -50,7 +50,6 @@ body {
 .rodape1 {
   background-color: #e21717;
   text-align: center;
-  flex-shrink: 0;
 }
 
 .rodape1 p{
