@@ -1,100 +1,106 @@
 /*Página inicial*/
-body{                            /*o body para todas as paginas*/
-  margin: 0;
-  padding: 0;
+body {
+  /*o body para todas as paginas*/
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 16px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
 }
 
-.menu{                             /*o mesmo menu que esta presente em todas as paginas*/
+.menu {
+  /*o mesmo menu que esta presente em todas as paginas*/
   background-color: #e21717;
   color: white;
-  display: flex;      /*container flexivel*/
-  flex-wrap: wrap; 
-  justify-content: space-between; 
-  align-items: center;       
-  padding: 10px;     /*espaço entre conteudo e bordas do proprio elemento*/
+  /*container flexivel*/
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  /*espaço entre conteudo e bordas do proprio elemento*/
+  padding: 10px;
 }
 
-.menu li{
+.menu li {
   display: inline-block;
-  margin-right: 33px;  /*distancia entre os itens do menu*/
+  /*distancia entre os itens do menu*/
+  margin-right: 33px;
   color: white;
   padding: 5px;
   text-decoration: none;
 }
- 
-.conteudo1 h1{
-  text-align: center;
-}
 
-.conteudo1 section{
+.conteudo1 section {
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: justify;
   align-items: center;
-  padding: 40px;
+  padding: 30px;
+  flex: 1;
 }
 
-.conteudo1 p{
-  text-align: justify;
- 
-}
-
-#imagemInicial{
-  width: 650px;
+#imagemInicial {
   max-width: 100%;
   height: auto;
- }
+}
 
-.rodape1{
+.rodape1 {
   background-color: #e21717;
-  padding: 3px;
-  box-sizing: border-box;
+  text-align: center;
+  flex-shrink: 0;
 }
- /* página: Quem Somos*/
- 
-.conteudo2 h1{
+
+.rodape1 p{
+  color: white;
+}
+
+/* página: Quem Somos*/
+
+.conteudo2 h1 {
   text-align: center;
 
- }
+}
 
-.conteudo2 section{
+.conteudo2 section {
   text-align: center;
   padding: 15px;
   width: 900px;
   margin: auto;
- }
+}
 
-.conteudo2 p{
+.conteudo2 p {
   text-align: justify;
- }
+}
 
- /* página: Contato*/
-.conteudo3 h1{
+/* página: Contato*/
+.conteudo3 h1 {
   text-align: center;
- }
+}
 
-.conteudo3 section{
+.conteudo3 section {
   text-align: center;
   padding: 15px;
   width: 900px;
   margin: auto;
- }
-.conteudo3 p{
+}
+
+.conteudo3 p {
   text-align: center;
 }
+
 /*página: Perguntas frequentes*/
 
-.conteudo4 h1{
+.conteudo4 h1 {
   text-align: center;
 }
 
-.conteudo4 section{
+.conteudo4 section {
   padding: 9px;
   width: 900px;
-  margin: auto;     
+  margin: auto;
 
 }
 
@@ -103,13 +109,14 @@ body{                            /*o body para todas as paginas*/
   line-height: 1.5;
   margin-bottom: 20px;
 }
+
 /* página: Cadastro*/
 
-.cadastro h1{
+.cadastro h1 {
   text-align: center;
 }
 
-.cadastro section{
+.cadastro section {
   text-align: center;
   padding: 15px;
   width: 900px;
@@ -117,11 +124,11 @@ body{                            /*o body para todas as paginas*/
 }
 
 /* página: Login*/
-.login h1{
+.login h1 {
   text-align: center;
 }
 
-.login section{
+.login section {
   text-align: center;
   padding: 15px;
   width: 900px;
