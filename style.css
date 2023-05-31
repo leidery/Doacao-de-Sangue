@@ -50,6 +50,7 @@ body {
 .div-image img{
   margin: auto;
   max-width: 100%;
+  height: auto;
 }
 
 .footer1 {
@@ -61,6 +62,9 @@ body {
 .footer1 p{
   color: white;
 }
+
+
+
 
 /* página: Quem Somos*/
 
