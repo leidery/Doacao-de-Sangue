@@ -10,25 +10,12 @@ body {
   min-height: 100%;
 }
 
-.menu {
-  /*o mesmo menu que esta presente em todas as paginas*/
-  background-color: #e21717;
-  color: white;
-  display: flex;
-  /*quebrar para a proxima linha*/
-  flex-wrap: wrap; 
-  justify-content: space-between;
-  align-items: center;
-  /*preeenchimento entre conteudo e bordas do proprio elemento*/
-  padding: 10px;
+.custom-navbar{
+  background-color: #f84343;
 }
 
-.menu li {
-  display: inline-block;
-  /*distancia entre os itens do menu*/
-  margin-right: 33px;
-  color: white;
-  
+.nav-item:hover{
+  background-color: #f53d3d;
 }
 
 .conteudo1 {
@@ -53,9 +40,10 @@ body {
   height: auto;
 }
 
-.footer1 {
-  background-color: #e21717;
+.footer1{
+  background-color: #e21616;
   text-align: center;
+  color:white
   
 }
 
@@ -80,13 +68,11 @@ body {
 
 
 .footer2{
-  background-color: #e21717;
+  background-color: #e21616;
   text-align: center;
+  color:white
 }
 
-.footer2 p {
-  color:white;
-}
 
 /* página: Contato*/
 
@@ -101,13 +87,11 @@ body {
 }
 
 .footer3{
-  background-color: #e21717;
+  background-color: #e21616;
   text-align: center;
+  color:white
 }
 
-.footer3 p {
-  color: white;
-}
 
 /*página: Perguntas frequentes*/
 
@@ -122,12 +106,9 @@ body {
 }
 
 .footer4{
-  background-color: #e21717;
+  background-color: #e21616;
   text-align: center;
-}
-
-.footer4 p {
-  color:white;
+  color:white
 }
 
 /* página: Cadastro*/
@@ -142,13 +123,10 @@ body {
   flex: 1;
 }
 
-.footer5 {
-  background-color: #e21717;
+.footer5{
+  background-color: #e21616;
   text-align: center;
-}
-
-.footer5 p {
-  color:white;
+  color:white
 }
 
 /* página: Login*/
@@ -164,10 +142,7 @@ body {
 }
 
 .footer6{
-  background-color: #e21717;
+  background-color: #e21616;
   text-align: center;
-}
-
-.footer6 p {
-  color:white;
+  color:white
 }
