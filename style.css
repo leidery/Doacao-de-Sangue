@@ -43,15 +43,9 @@ body {
 .footer1{
   background-color: #e21616;
   text-align: center;
-  color:white
+  color:white;
   
 }
-
-.footer1 p{
-  color: white;
-}
-
-
 
 
 /* página: Quem Somos*/
@@ -70,7 +64,7 @@ body {
 .footer2{
   background-color: #e21616;
   text-align: center;
-  color:white
+  color:white;
 }
 
 
@@ -89,7 +83,7 @@ body {
 .footer3{
   background-color: #e21616;
   text-align: center;
-  color:white
+  color:white;
 }
 
 
@@ -108,7 +102,7 @@ body {
 .footer4{
   background-color: #e21616;
   text-align: center;
-  color:white
+  color:white;
 }
 
 /* página: Cadastro*/
@@ -123,11 +117,6 @@ body {
   flex: 1;
 }
 
-.footer5{
-  background-color: #e21616;
-  text-align: center;
-  color:white
-}
 
 /* página: Login*/
 
@@ -141,8 +130,14 @@ body {
   flex: 1;
 }
 
-.footer6{
-  background-color: #e21616;
+.footer3,.footer5,.footer6{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
   text-align: center;
-  color:white
+  background-color: #e21616;
+  color: white;
+  overflow: hidden;
+  
 }
