@@ -61,13 +61,6 @@ body {
 }
 
 
-.footer2{
-  background-color: #e21616;
-  text-align: center;
-  color:white;
-}
-
-
 /* página: Contato*/
 
 .conteudo3 {
@@ -79,13 +72,6 @@ body {
   padding: 30px;
   flex: 1;
 }
-
-.footer3{
-  background-color: #e21616;
-  text-align: center;
-  color:white;
-}
-
 
 /*página: Perguntas frequentes*/
 
@@ -130,7 +116,7 @@ body {
   flex: 1;
 }
 
-.footer3,.footer5,.footer6{
+.footer2,.footer3,.footer5,.footer6{
   position: fixed;
   left: 0;
   bottom: 0;
