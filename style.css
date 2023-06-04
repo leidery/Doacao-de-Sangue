@@ -20,7 +20,7 @@ body {
   background-color: #eee8e8;
 }
 
-#cont1 {
+#cont-index {
   display: flex;
   flex-direction: column;
   justify-content: center;
