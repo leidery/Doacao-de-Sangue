@@ -68,7 +68,7 @@ body {
   flex: 1;
 }
 
-.footer{
+.footer-cadastro,.footer-index{
   background-color: #242222;
   text-align: center;
   color: white;
@@ -76,4 +76,15 @@ body {
   width: 100%;
   bottom: 0;
 }
+.footer-login{
+  background-color: #242222;
+  text-align: center;
+  color: white;
+  left: 0;
+  width: 100%;
+  bottom: 0;
+  position: absolute;
+}
+
+
 
