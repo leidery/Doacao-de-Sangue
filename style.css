@@ -58,14 +58,14 @@ body {
 
 /* página: Login*/
 
-.login {
-  display: flex;
-  flex-direction: column;
+#login{
+  background-color: rgba(231, 235, 238, 0.473);
   justify-content: center;
-  text-align: justify;
   align-items: center;
-  padding: 30px;
-  flex: 1;
+  display: flex;
+  border-radius: 8px;
+  width: auto;
+  height: auto;
 }
 
 .footer{
