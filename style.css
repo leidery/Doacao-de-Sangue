@@ -45,14 +45,19 @@ body {
 
 /* página: Cadastro*/
 
-.cadastro {
-  display: flex;
-  flex-direction: column;
+#cadastro{
+  background-color: rgba(231, 235, 238, 0.473);
   justify-content: center;
-  text-align: justify;
   align-items: center;
-  padding: 30px;
-  flex: 1;
+  display: flex;
+  border-radius: 8px;
+  width: auto;
+  height: auto;
+}
+
+#botao-cadastro a {
+  text-decoration: none;
+  color: white;
 }
 
 
@@ -76,6 +81,11 @@ body {
   width: 100%;
   bottom: 0;
 }
+.footer a{
+  text-decoration: none;
+  color: white;
+}
+
 
 .footer-login{
   background-color: #242222;
@@ -86,16 +96,20 @@ body {
   bottom: 0;
   position: absolute;
 }
-
 .footer-login a {
   text-decoration: none;
   color: white;
 }
 
-.footer a{
+.footer-cadastro{
+  background-color: #242222;
+  text-align: center;
+  color: white;
+  left: 0;
+  width: 100%;
+  bottom: 0;
+}
+.footer-cadastro a {
   text-decoration: none;
   color: white;
 }
-
-
-
