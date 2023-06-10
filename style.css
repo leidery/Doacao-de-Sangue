@@ -1,6 +1,7 @@
 /*Página inicial*/
+
+
 body {
-  /*o body para todas as paginas*/
   font-family:Arial, Helvetica, sans-serif;
   font-size: 16px;
   margin: 0;
@@ -53,6 +54,14 @@ body {
   border-radius: 8px;
   width: auto;
   height: auto;
+ 
+}
+
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 100px;
 }
 
 #botao-cadastro a {
@@ -73,13 +82,19 @@ body {
   height: auto;
 }
 
+.wrapper-login {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 400px;
+}
+
 .footer{
   background-color: #242222;
   text-align: center;
   color: white;
-  left: 0;
-  width: 100%;
-  bottom: 0;
+  padding: 20px;
+  
 }
 .footer a{
   text-decoration: none;
@@ -87,29 +102,29 @@ body {
 }
 
 
-.footer-login{
-  background-color: #242222;
-  text-align: center;
-  color: white;
-  left: 0;
-  width: 100%;
-  bottom: 0;
-  position: absolute;
-}
+
 .footer-login a {
   text-decoration: none;
   color: white;
 }
 
-.footer-cadastro{
+/*.footer-cadastro {
   background-color: #242222;
   text-align: center;
   color: white;
-  left: 0;
-  width: 100%;
   bottom: 0;
+  width: 100%;
+  max-height: 110px;
+  margin-top: 10px;
+  position: fixed;
+  
 }
+
 .footer-cadastro a {
   text-decoration: none;
   color: white;
 }
+*/
+
+
+
