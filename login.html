@@ -48,19 +48,23 @@
   <div class="container" id="login">
     <form>
       <h1>Login</h1>
-      <div class="mb-3">
-        <label for="exampleInputEmail1" class="form-label">Email</label>
-        <input type="email" class="form-control" id="exampleInputEmail1" >
-      </div>
-      <div class="mb-3">
-        <label for="exampleInputPassword1" class="form-label">Senha</label>
-        <input type="password" class="form-control" id="exampleInputPassword1">
-      </div>
+
+      <fieldset>
+        <legend for="exampleInputEmail1">E-mail</legend>
+        <input type="email" id="exampleInputEmail1" class="input-only-text">
+        <br>
+      </fieldset>
+      
+      <fieldset>
+        <legend for="exampleInputPassword1">Senha</legend>
+        <input type="password" id="exampleInputPassword1" class="input-only-text">
+      </fieldset>
+      
       <div class="mb-3 form-check">
         <input type="checkbox" class="form-check-input" id="exampleCheck1">
         <label class="form-check-label" for="exampleCheck1">Lembrar-me</label>
       </div>
-      <button type="submit" class="btn btn-danger">Entrar</button>
+      <button type="submit" class="btn btn-danger" style="margin-bottom: 20px;">Entrar</button>
     </form>
   </div>
 </div>
