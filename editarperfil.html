@@ -40,6 +40,9 @@
                   <a class="nav-link active" aria-current="page" href="editarperfil.html">Editar perfil</a>
                 </li>
                 <li class="nav-item">
+                    <a class="nav-link"  href="perfil.html">Perfil</a>
+                  </li>
+                <li class="nav-item">
                   <a class="nav-link" href="info.html">Informações pessoais</a>
                 </li>
                 <li class="nav-item">
@@ -71,6 +74,14 @@
                 <input type="date" class="form-control" id="dataNascimento">
             </div>
             <div class="mb-3">
+                <label for="genero" class="form-label">Estado</label>
+                <select class="form-select" id="genero">
+                    <option value="masculino">.</option>
+                    <option value="feminino">.</option>
+                    <option value="outro">.</option>
+                </select>
+            </div>
+            <div class="mb-3">
                 <label for="genero" class="form-label">Cidade</label>
                 <select class="form-select" id="genero">
                     <option value="masculino">.</option>
@@ -79,8 +90,12 @@
                 </select>
             </div>
             <div class="mb-3">
-                <label for="endereco" class="form-label">Endereço </label>
-                <input type="text" class="form-control" id="endereco">
+                <label for="rua" class="form-label">Rua </label>
+                <input type="text" class="form-control" id="rua">
+            </div>
+            <div class="mb-3">
+                <label for="numero" class="form-label">Número da rua</label>
+                <input type="text" class="form-control" id="numero">
             </div>
             <div class="mb-3">
                 <label for="telefone" class="form-label">Número de Telefone</label>
@@ -98,6 +113,26 @@
                     <option value="O+">O+</option>
                     <option value="O-">O-</option>
                 </select>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email">
+            </div>
+            <div class="mb-3">
+                <label for="senha1" class="form-label">Nova senha</label>
+                <input type="password" class="form-control" id="senha1">
+            </div>
+            <div class="mb-3">
+                <label for="senha2" class="form-label">Confirmar nova senha</label>
+                <input type="password" class="form-control" id="senha2">
+            </div>
+            <div class="mb-3">
+                <label for="rg" class="form-label">RG </label>
+                <input type="text" class="form-control" id="rg">
+            </div>
+            <div class="mb-3">
+                <label for="cpf" class="form-label">CPF </label>
+                <input type="text" class="form-control" id="cpf">
             </div>
             <div class="mb-3">
                 <label for="ultimaDoacao" class="form-label">Última Data de Doação de Sangue</label>
@@ -123,7 +158,7 @@
                 <input type="checkbox" class="form-check-input" id="notificacoes">
                 <label class="form-check-label" for="notificacoes">Desejo receber notificações sobre campanhas de doação</label>
             </div>
-            <button type="submit" class="btn btn-primary" id="botperfil"><a href="pagLogin.html">Salvar Alterações</a></button>
+            <button type="submit" class="btn btn-primary" id="botperfil"><a href="perfil.html">Salvar Alterações</a></button>
         </form>
     </div>
     <br>
