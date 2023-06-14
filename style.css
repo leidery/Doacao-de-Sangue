@@ -91,6 +91,12 @@ body {
   color: white;
 }
 
+#link-senha{
+  text-decoration: none;
+  color: red;
+}
+
+
 .wrapper-login {
   min-height: 100%;
   display: flex;
