@@ -12,6 +12,7 @@ body {
 
 .nav-item:hover{
   background-color: rgba(240, 63, 63, 0.918);
+  border-radius: 4px;
 }
 
 #cont-index {
