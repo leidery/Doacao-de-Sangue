@@ -15,7 +15,6 @@
   <link rel="stylesheet" type="text/css" href="style.css">
   <title>Perfil</title>
 </head>
-<!--completar com as mesmas coisas que pedem no cadastro, fazer um aside-->
 
 <body>
   <nav class="navbar navbar-dark bg-dark fixed-top">
@@ -41,9 +40,6 @@
               <a class="nav-link active" class="nav-link" aria-current="page" href="perfil.html">Perfil</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="info.html">Informações pessoais</a>
-            </li>
-            <li class="nav-item">
               <a class="nav-link" href="index.html">Sair</a>
             </li>
         </div>
@@ -54,7 +50,6 @@
   <div class="container">
     <div class="row">
       <div class="col-md-4">
-        <!-- Perfil do usuário (aside) -->
         <aside class="perfil-card">
           <img src="avatar.jpg" alt="Foto de Perfil" class="perfil-avatar">
           <h2>Perfil</h2>
@@ -101,13 +96,19 @@
             <li class="list-group-item">
               <strong>Endereço:</strong>  Rua Sem Nome, 123
             </li>
+            <li class="list-group-item">
+              <strong>Localização preferida:</strong> Hospital X
+            </li>
+            <li class="list-group-item">
+              <strong>Disponibilidade:</strong> Segunda a sexta-feira, das 9h às 17h
+            </li>
           </ul>
           <a href="editarperfil.html" class="btn btn-danger mt-3">Editar Perfil</a>
         </aside>
       </div>
+      <br>
 
       <div class="col-md-8">
-        <!-- Conteúdo principal -->
         <h2>Bem-vindo(a), Aline A. Bancks!</h2>
         <p>Esta é a sua página de perfil na plataforma de Doação de Sangue. Aqui você pode visualizar e editar suas
           informações pessoais, bem como acompanhar suas doações.
@@ -149,38 +150,33 @@
 <br>
   <div class="container historico-doacoes">
     <h3>Histórico de Doações</h3>
+    <hr>
     <table class="table table-striped">
       <thead>
         <tr>
-          <th>Data</th>
-          <th>Tipo Sanguíneo</th>
-          <th>Local</th>
+          <th>DATA</th>
+          <th>LOCAL</th>
         </tr>
       </thead>
       <tbody>
         <tr>
           <td>04/02/2019</td>
-          <td>A+</td>
           <td>Hospital E</td>
         </tr>
         <tr>
           <td>08/04/2018</td>
-          <td>A+</td>
           <td>Hospital D</td>
         </tr>
         <tr>
           <td>08/04/2017</td>
-          <td>A+</td>
           <td>Hospital C</td>
         </tr>
         <tr>
           <td>08/04/2016</td>
-          <td>A+</td>
           <td>Hospital B</td>
         </tr>
         <tr>
           <td>08/04/2015</td>
-          <td>A+</td>
           <td>Hospital A</td>
         </tr>
       </tbody>
