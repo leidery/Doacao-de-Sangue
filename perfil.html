@@ -110,10 +110,14 @@
           informações pessoais, bem como acompanhar suas doações.
         </p>
         <p>
-          Você poderá escolher um hospital de preferência ou o mais proximo da sua região.
+          Você poderá escolher um hospital de sua preferência ou o mais proximo da sua região.
         </p>
 
         <h3>Realizar Doação</h3>
+        <div class="mb-3">
+          <label for="dataInput" class="form-label">Data da Doação</label>
+          <input type="date" id="dataInput" class="form-control">
+        </div>
         <form>
           <div class="mb-3">
             <label for="hospitalInput" class="form-label">Selecione o Hospital</label>
@@ -124,22 +128,20 @@
               <option value="hospital3">Hospital C</option>
             </select>
           </div>
-          <div class="mb-3">
-            <label for="dataInput" class="form-label">Data da Doação</label>
-            <input type="date" id="dataInput" class="form-control">
-          </div>
+          <h3>Pesquisar Hospitais Próximos</h3>
+          <form>
+            <div class="mb-3">
+              <label for="localInput" class="form-label">Localização</label>
+              <input type="text" id="localInput" class="form-control" placeholder="Digite sua localização">
+            </div>
+            <button type="submit" class="btn btn-danger">Pesquisar</button>
+          </form>
+          <br>
           <button type="submit" class="btn btn-danger">Agendar Doação</button>
         </form>
         <br>
 
-        <h3>Pesquisar Hospitais Próximos</h3>
-        <form>
-          <div class="mb-3">
-            <label for="localInput" class="form-label">Localização</label>
-            <input type="text" id="localInput" class="form-control" placeholder="Digite sua localização">
-          </div>
-          <button type="submit" class="btn btn-danger">Pesquisar</button>
-        </form>
+       
       </div>
     </div>
   </div>
@@ -158,12 +160,27 @@
         <tr>
           <td>04/02/2019</td>
           <td>A+</td>
-          <td>Hospital Y</td>
+          <td>Hospital E</td>
         </tr>
         <tr>
           <td>08/04/2018</td>
           <td>A+</td>
-          <td>Hospital X</td>
+          <td>Hospital D</td>
+        </tr>
+        <tr>
+          <td>08/04/2017</td>
+          <td>A+</td>
+          <td>Hospital C</td>
+        </tr>
+        <tr>
+          <td>08/04/2016</td>
+          <td>A+</td>
+          <td>Hospital B</td>
+        </tr>
+        <tr>
+          <td>08/04/2015</td>
+          <td>A+</td>
+          <td>Hospital A</td>
         </tr>
       </tbody>
     </table>
