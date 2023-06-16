@@ -215,3 +215,24 @@ fieldset {
   margin-bottom: 20px;
   margin-left: 10px;
 }
+
+/*pagina perfil*/
+.perfil-card {
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.perfil-avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+
+
+.historico-doacoes {
+  margin-bottom: 4rem;
+}

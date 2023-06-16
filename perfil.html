@@ -1,96 +1,163 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="icons/login.png" type="image/x-icon">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <title>Perfil</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="icons/login.png" type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Perfil</title>
 </head>
 <!--completar com as mesmas coisas que pedem no cadastro, fazer um aside-->
+
 <body>
-    <nav class="navbar navbar-dark bg-dark fixed-top">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#"></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar"
-            aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
-            <span class="material-symbols-outlined">
-              bloodtype
-            </span>
-    
-          </button>
-          <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
-            aria-labelledby="offcanvasDarkNavbarLabel">
-            <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Menu</h5>
-              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
-                aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body">
-              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                <li class="nav-item">
-                  <a class="nav-link active" class="nav-link" aria-current="page" href="perfil.html">Perfil</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="editarperfil.html">Editar perfil</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="info.html">Informações pessoais</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="index.html">Sair</a>
-                </li>
-            </div>
-          </div>
+  <nav class="navbar navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar"
+        aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+        <span class="material-symbols-outlined">
+          bloodtype
+        </span>
+
+      </button>
+      <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+        aria-labelledby="offcanvasDarkNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Menu</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+            aria-label="Close"></button>
         </div>
-      </nav>
-      <br><br><br>
-
-<div class="wrapper-profile">
-  <div class="container" id="profile">
-    <h1>Perfil</h1>
-
-    <div class="profile-info">
-      <p><strong>Nome:</strong> João da Silva</p>
-      <p><strong>Gênero:</strong> Masculino</p>
-      <p><strong>Data de Nascimento:</strong> 01/01/1990</p>
-      <p><strong>Endereço:</strong> Rua ABC, 123</p>
-      <p><strong>Telefone:</strong> (11) 99999-9999</p>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active" class="nav-link" aria-current="page" href="perfil.html">Perfil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="editarperfil.html">Editar perfil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="info.html">Informações pessoais</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Sair</a>
+            </li>
+        </div>
+      </div>
     </div>
+  </nav>
+  <br><br><br>
 
-    <div class="donation-info">
-      <h2>Informações sobre a Doação</h2>
-      <p><strong>Tipo Sanguíneo:</strong> O+</p>
-      <p><strong>Fator RH:</strong> Positivo</p>
-      <p><strong>Última Doação:</strong> 05/06/2023</p>
-      <p><strong>Restrições de Saúde:</strong> Nenhuma</p>
+  <header class="py-3">
+    <div class="container">
+      <h1>Doação de Sangue</h1>
     </div>
+  </header>
 
-    <div class="availability-info">
-      <h2>Preferências e Disponibilidade</h2>
-      <p><strong>Localização Preferida:</strong> Hospital XPTO</p>
-      <p><strong>Disponibilidade:</strong> Segunda a sexta-feira, das 9h às 17h</p>
-      <p><strong>Notificações:</strong> Desejo receber notificações sobre campanhas de doação</p>
-    </div>
+  <!-- Conteúdo principal -->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <!-- Perfil do usuário (aside) -->
+        <aside class="perfil-card">
+          <img src="avatar.jpg" alt="Foto de Perfil" class="perfil-avatar">
+          <h2>Seu Perfil</h2>
+          <ul class="list-group">
+            <li class="list-group-item"><strong>Nome:</strong> João Silva</li>
+            <li class="list-group-item"><strong>Tipo Sanguíneo:</strong> O+</li>
+            <li class="list-group-item"><strong>Idade:</strong> 30 anos</li>
+            <li class="list-group-item"><strong>Doações Realizadas:</strong> 5</li>
+            <li class="list-group-item"><strong>Última Doação:</strong> 10/06/2023</li>
+            <li class="list-group-item"><strong>Telefone:</strong> (11) 1234-5678</li>
+            <li class="list-group-item"><strong>E-mail:</strong> exemplo@gmail.com</li>
+            <li class="list-group-item"><strong>Cidade:</strong> São Paulo</li>
+            <li class="list-group-item"><strong>Estado:</strong> SP</li>
+            <!-- Adicione outras informações do perfil aqui -->
+          </ul>
+          <a href="editarperfil.html" class="btn btn-danger mt-3">Editar Perfil</a>
+        </aside>
+      </div>
 
-    <div class="donation-history">
-      <h2>Histórico de Doações e Estatísticas</h2>
-      <p><strong>Total de Doações:</strong> 5</p>
-      <p><strong>Estatísticas de Tipo Sanguíneo:</strong> O+ (3), A- (2)</p>
+      <div class="col-md-8">
+        <!-- Conteúdo principal -->
+        <h2>Bem-vindo, João Silva!</h2>
+        <p>Esta é a sua página de perfil na plataforma de Doação de Sangue. Aqui você pode visualizar e editar suas
+          informações pessoais, bem como acompanhar suas doações.
+        </p>
+        <p>
+          Você poderá escolher um hospital de preferência ou o mais proximo da sua região.
+        </p>
+
+        <h3>Realizar Doação</h3>
+        <form>
+          <div class="mb-3">
+            <label for="hospitalInput" class="form-label">Selecione o Hospital</label>
+            <select id="hospitalInput" class="form-select">
+              <option selected disabled>Escolha um hospital</option>
+              <option value="hospital1">Hospital A</option>
+              <option value="hospital2">Hospital B</option>
+              <option value="hospital3">Hospital C</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <label for="dataInput" class="form-label">Data da Doação</label>
+            <input type="date" id="dataInput" class="form-control">
+          </div>
+          <button type="submit" class="btn btn-danger">Agendar Doação</button>
+        </form>
+        <br>
+
+        <h3>Pesquisar Hospitais Próximos</h3>
+        <form>
+          <div class="mb-3">
+            <label for="localInput" class="form-label">Localização</label>
+            <input type="text" id="localInput" class="form-control" placeholder="Digite sua localização">
+          </div>
+          <button type="submit" class="btn btn-danger">Pesquisar</button>
+        </form>
+      </div>
     </div>
   </div>
-</div>
 
-<footer class="footer">
-  <p>&copy; Doação de Sangue</p>
-  <p>Em caso de dúvidas, entre em contato com <a href="mailto:bloodsearchopet@gmail.com"><strong>este</strong></a> email</p>
-  <p>bloodsearchopet@gmail.com</p>
-</footer>
+  <div class="container historico-doacoes">
+    <h3>Histórico de Doações</h3>
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>Data</th>
+          <th>Tipo Sanguíneo</th>
+          <th>Local</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>10/06/2023</td>
+          <td>O+</td>
+          <td>Hospital ABC</td>
+        </tr>
+        <tr>
+          <td>05/04/2023</td>
+          <td>O+</td>
+          <td>Posto de Coleta XYZ</td>
+        </tr>
+        <!-- Adicione mais linhas para cada doação realizada -->
+      </tbody>
+    </table>
+  </div>
+  <footer class="footer">
+    <p>&copy; Doação de Sangue</p>
+    <p>Em caso de dúvidas, entre em contato com <a href="mailto:bloodsearchopet@gmail.com"><strong>este</strong></a>
+      email</p>
+    <p>bloodsearchopet@gmail.com</p>
+  </footer>
 
 </body>
+
 </html>
