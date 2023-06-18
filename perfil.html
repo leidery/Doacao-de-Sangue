@@ -51,8 +51,10 @@
     <div class="row">
       <div class="col-md-4">
         <aside class="perfil-card">
-          <img src="avatar.jpg" alt="Foto de Perfil" class="perfil-avatar">
-          <h2>Perfil</h2>
+          <div class="div-foto">
+            <img src="img/avatar.jpg" alt="Foto de Perfil" class="perfil-avatar">
+          </div>
+          <br>
           <ul class="list-group">
             <li class="list-group-item">
               <strong>Nome:</strong> Aline A. Bancks
@@ -127,7 +129,7 @@
               <option value="hospital2">Hemocentro B</option>
               <option value="hospital3">Hospital C</option>
             </select><br>
-            <button type="submit" class="btn btn-danger">Agendar doação</button>
+            <button type="submit" class="btn btn-danger" onclick="alerta()">Agendar doação</button>
           </div>
 
           <h4>Localizar hemocentros mais proxímos</h4>
@@ -153,7 +155,7 @@
                       <p><strong>CEP:</strong> xxxxx-xxx</p>
                       <p><strong>e-mail:</strong> teste@email.com</p> 
                       <p><strong>Horário de funcionamento:</strong> Segunda a sábado, das 9h às 17h</p> 
-                      <button type="submit" class="btn btn-danger">Agendar doação</button></p>
+                      <button type="submit" class="btn btn-danger" onclick="alerta()">Agendar doação</button>
                     </div>
                   </div>
                 </div>
@@ -167,7 +169,7 @@
                       <p><strong>CEP:</strong> xxxxx-xxx</p>
                       <p><strong>e-mail:</strong> teste@email.com</p>
                       <p><strong>Horário de funcionamento:</strong> Segunda a sexta-feira, das 9h às 18h</p>  
-                      <button type="submit" class="btn btn-danger">Agendar doação</button></p>
+                      <button type="submit" class="btn btn-danger" onclick="alerta()">Agendar doação</button>
                     </div>
                   </div>
                 </div>
@@ -212,6 +214,13 @@
       </tbody>
     </table>
   </div>
+
+  <script>
+    function alerta() {
+      alert("Doação agendada com sucesso!");
+    }
+  </script>
+
   <footer class="footer">
     <p>&copy; Doação de Sangue</p>
     <p>Em caso de dúvidas, entre em contato com <a href="mailto:bloodsearchopet@gmail.com"><strong>este</strong></a>

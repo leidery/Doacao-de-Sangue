@@ -224,6 +224,12 @@ fieldset {
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
 }
 
+.div-foto{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .perfil-avatar {
   width: 100px;
   height: 100px;
@@ -242,7 +248,6 @@ fieldset {
 #pesquisarCheckbox:checked ~ .conteudo-oculto {
   display: block;
 }
-
 
 /*
 o seletor ~ é usado para selecionar elementos irmãos que seguem um elemento de referência e que correspondem ao seletor especificado,  ele vai seleciona a classe .conteudo-oculto que vem após o elemento com o ID pesquisarCheckbox.
