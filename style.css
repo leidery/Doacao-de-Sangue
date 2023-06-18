@@ -231,8 +231,19 @@ fieldset {
   object-fit: cover;
 }
 
-
-
 .historico-doacoes {
   margin-bottom: 4rem;
 }
+
+.conteudo-oculto {
+  display: none;
+}
+
+#pesquisarCheckbox:checked ~ .conteudo-oculto {
+  display: block;
+}
+
+
+/*
+o seletor ~ é usado para selecionar elementos irmãos que seguem um elemento de referência e que correspondem ao seletor especificado,  ele vai seleciona a classe .conteudo-oculto que vem após o elemento com o ID pesquisarCheckbox.
+*/

@@ -103,8 +103,7 @@
           <a href="editarperfil.html" class="btn btn-danger mt-3">Editar Perfil</a>
         </aside>
       </div>
-      <br>
-
+      
       <div class="col-md-8">
         <h2>Bem-vindo(a), Aline A. Bancks!</h2>
         <p>Aqui você pode visualizar e editar suas
@@ -116,31 +115,65 @@
 
         <h3>Realizar doação</h3>
         <div class="mb-3">
-          <label for="dataInput" class="form-label">Data da doação</label>
+          <label for="dataInput" class="form-label">Selecione uma data</label>
           <input type="date" id="dataInput" class="form-control">
         </div>
         <form>
           <div class="mb-3">
-            <label for="hospitalInput" class="form-label">Selecione o local</label>
+            <label for="hospitalInput" class="form-label">Selecione um local de preferência</label>
             <select id="hospitalInput" class="form-select">
               <option selected disabled>selecione</option>
               <option value="hospital1">Hospital A</option>
               <option value="hospital2">Hemocentro B</option>
               <option value="hospital3">Hospital C</option>
-            </select>
+            </select><br>
+            <button type="submit" class="btn btn-danger">Agendar doação</button>
           </div>
-          <h3>Localizar hemocentros proxímos</h3>
-          <form>
+
+          <h4>Localizar hemocentros mais proxímos</h4>
+          
             <div class="mb-3">
               <label for="localInput" class="form-label">Localização</label>
-              <input type="text" id="localInput" class="form-control" placeholder="Digite sua localização">
+              <input type="text" id="localInput" class="form-control" placeholder="Digite o endereço">
             </div>
-            <button type="submit" class="btn btn-danger">Pesquisar</button>
-          </form>
-          <br>
-          <button type="submit" class="btn btn-danger">Agendar doação</button>
+            <input type="checkbox" id="pesquisarCheckbox" class="d-none">
+            <label for="pesquisarCheckbox" class="btn btn-danger">Pesquisar</label> <!--colcoar cidade-->
+            <div class="conteudo-oculto">
+              <br>
+              <p>Os mais proximos:</p>
+              <br>
+              <div class="row row-cols-1 row-cols-md-2 g-4">
+                <div class="col">
+                  <div class="card"> 
+                    <div class="card-body">
+                      <h5 class="card-title">Hemocentro A</h5>
+                      <p><strong>Nome:</strong> Hemocentro A</p>
+                      <p><strong>Endereço:</strong> Rua de teste, 1244, Água Verde</p>
+                      <p><strong>Telefone:</strong> 41 00000-0000</p>
+                      <p><strong>CEP:</strong> xxxxx-xxx</p>
+                      <p><strong>e-mail:</strong> teste@email.com</p> 
+                      <p><strong>Horário de funcionamento:</strong> Segunda a sábado, das 9h às 17h</p> 
+                      <button type="submit" class="btn btn-danger">Agendar doação</button></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card"> 
+                    <div class="card-body">
+                      <h5 class="card-title">Hemocentro B</h5>
+                      <p><strong>Nome:</strong> Hemocentro B</p>
+                      <p><strong>Endereço:</strong> Rua de teste, 1244, Centro</p>
+                      <p><strong>Telefone:</strong> 41 00000-0000</p>
+                      <p><strong>CEP:</strong> xxxxx-xxx</p>
+                      <p><strong>e-mail:</strong> teste@email.com</p>
+                      <p><strong>Horário de funcionamento:</strong> Segunda a sexta-feira, das 9h às 18h</p>  
+                      <button type="submit" class="btn btn-danger">Agendar doação</button></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
         </form>
-        <br>
       </div>
     </div>
   </div>
@@ -185,7 +218,5 @@
       email</p>
     <p>bloodsearchopet@gmail.com</p>
   </footer>
-
 </body>
-
 </html>
