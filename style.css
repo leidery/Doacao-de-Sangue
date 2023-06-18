@@ -248,7 +248,28 @@ fieldset {
 #pesquisarCheckbox:checked ~ .conteudo-oculto {
   display: block;
 }
+/*pag esqueci senha*/
 
+#bt-senha a{
+  text-decoration: none;
+  color: white;
+}
+
+#recSenha{
+  padding: 15px;
+  background-color: #FFFFFF;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  border-radius: 8px;
+  width: 400px;
+  height: auto;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
+}
+
+#recSenha h2{
+  text-align: center;
+}
 /*
 o seletor ~ é usado para selecionar elementos irmãos que seguem um elemento de referência e que correspondem ao seletor especificado,  ele vai seleciona a classe .conteudo-oculto que vem após o elemento com o ID pesquisarCheckbox.
 */
