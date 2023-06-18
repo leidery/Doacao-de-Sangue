@@ -131,12 +131,13 @@
             </select><br>
             <button type="submit" class="btn btn-danger" onclick="alerta()">Agendar doação</button>
           </div>
+          <br><br>
 
-          <h4>Localizar hemocentros mais proxímos</h4>
+          <h4>Localizar hemocentros mais proxímos com base em seu endereço</h4>
           
             <div class="mb-3">
               <label for="localInput" class="form-label">Localização</label>
-              <input type="text" id="localInput" class="form-control" placeholder="Digite o endereço">
+              <input type="text" id="localInput"  class="form-control"  placeholder="Digite o endereço" onclick="obterLocalizacao()">
             </div>
             <input type="checkbox" id="pesquisarCheckbox" class="d-none">
             <label for="pesquisarCheckbox" class="btn btn-danger">Pesquisar</label> <!--colcoar cidade-->
@@ -218,7 +219,38 @@
   <script>
     function alerta() {
       alert("Doação agendada com sucesso!");
+    };
+
+
+    function obterLocalizacao() {
+
+      if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(exibirLocalizacao);
+      } else {
+        alert("Geolocalização não suportada pelo navegador.");
+      }
     }
+
+    function exibirLocalizacao(posicao) {
+    var latitude = posicao.coords.latitude;
+    var longitude = posicao.coords.longitude;
+
+    var url = `https://nominatim.openstreetmap.org/reverse?format=json&lat=${latitude}&lon=${longitude}`;
+    //url que acessa a api
+
+    fetch(url)
+    .then(response => response.json())
+    .then(data => {
+      var endereco = data.display_name;
+
+    // Preenche o valor do input com o endereço
+     document.getElementById("localInput").value = endereco;
+    })
+    .catch(error => {
+     console.error(error);
+      alert("Erro ao processar a requisição.");
+    });
+}
   </script>
 
   <footer class="footer">
