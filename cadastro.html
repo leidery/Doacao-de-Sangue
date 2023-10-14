@@ -44,7 +44,7 @@
   <br><br><br>
   <div class="wrapper">
   <div class="container" id="cadastro">
-      <form>
+      <form action="processa_cadastro.php" method="post" enctype="multipart/form-data">
         <h1>Cadastre-se</h1>
         <fieldset>
           <legend for="nome">Nome Completo: </legend>
@@ -240,7 +240,7 @@
         <label class="form-check-label" for="notificacoes">Deseja receber notificações via e-mail ?</label>
       </div>
 
-        <button class="btn btn-danger" id="botao-cadastro" style="margin-bottom: 20px;" value="Enviar" type="submit"> 
+      <button class="btn btn-danger" id="botao-cadastro" style="margin-bottom: 20px;" type="submit">Enviar
           <a href="login.html">Enviar</a>
         </button>
         <br>
