@@ -5,8 +5,9 @@
     $username = "root";
     $password = "";
     $dbname = "doacao";
-
-
+    if (session_status() == PHP_SESSION_NONE) {
+        session_start();
+    }
     $conn  = new mysqli($servername, $username, $password, $dbname);
 
     if($conn->connect_error){

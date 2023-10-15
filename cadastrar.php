@@ -53,28 +53,28 @@
       <form action="cadastro.php" method="post">
         <h1>Cadastre-se</h1>
         <fieldset>
-          <legend for="nome">Nome Completo: </legend>
-          <input type="text" id="nome" name="nome" class="input-only-text" required ><br>
+          <legend for="nome_cad">Nome Completo: </legend>
+          <input type="text" id="nome_cad" name="nome_cad" class="input-only-text" required><br>
         </fieldset>
 
         <fieldset>
-        <legend for="data-nascimento">Data de Nascimento: </legend>
-        <input type="date" id="data-nascimento" name="data-nascimento" class="input-only-text" required>
+        <legend for="data_nascimento">Data de Nascimento: </legend>
+        <input type="date" id="data_nascimento" name="data_nascimento" class="input-only-text" required>
         </fieldset>
 
         <div class="diverse-options">
         <label for="sexo">Sexo: </label>
-        <input type="radio" id="sexo-masculino" name="sexo" value="masculino" required >
+        <input type="radio" id="sexo_masculino" name="sexo" value="masculino" required >
         <label for="sexo-masculino">Masculino</label>
-        <input type="radio" id="sexo-feminino" name="sexo" value="feminino">
+        <input type="radio" id="sexo_feminino" name="sexo" value="feminino">
         <label for="sexo-feminino">Feminino</label>
         <input type="radio" id="outros" name="sexo" value="outros">
         <label for="outros">Outros</label><br>
         </div>
         <fieldset>
           <div class="select-container">
-          <legend for="tipo-sanguineo">Tipo Sanguíneo:</legend>
-          <select id="tipo-sanguineo" name="tipo-sanguineo" required>
+          <legend for="tipo_sanguineo">Tipo Sanguíneo:</legend>
+          <select id="tipo_sanguineo" name="tipo_sanguineo" required>
             <option selected disabled>selecione</option>
             <option class="select-option" value="Desconhecido">Desconhecido</option>
             <option class="select-option" value="O+">O+</option>
@@ -196,8 +196,8 @@
       </fieldset>
 
       <fieldset>
-      <legend for="numero">Número:</legend>
-      <input type="text" id="numero" name="numero" required  class="input-only-text"required>
+      <legend for="num_endereco">Número:</legend>
+      <input type="text" id="num_endereco" name="num_endereco" required  class="input-only-text"required>
       </fieldset>
     
       <fieldset>
@@ -236,18 +236,18 @@
       </div>
 
       <div class="diverse-options">
-        <label for="informacoes-saude">Quais?: </label>
+        <label for="info_saude">Quais?: </label>
         <br>
-        <textarea id="informacoes-saude" name="informacoes-saude"></textarea><br>
+        <textarea id="info_saude" name="info_saude"></textarea><br>
       </div>
 
       <div class="mb-3 form-check">
-        <input type="checkbox" class="form-check-input" id="notificacoes">
-        <label class="form-check-label" for="notificacoes">Deseja receber notificações via e-mail ?</label>
+        <input type="checkbox" class="form-check-input" id="notificacao">
+        <label class="form-check-label" for="notificacao">Deseja receber notificações via e-mail ?</label>
       </div>
 
       <button class="btn btn-danger" id="botao-cadastro" style="margin-bottom: 20px;" value="Enviar" type="submit" name="enviar_cad">
-          <a href="login.html">Enviar</a>
+          <a href="login.php">Enviar</a>
         </button>
         <br>
       </form>
