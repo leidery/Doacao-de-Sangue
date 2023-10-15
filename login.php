@@ -1,3 +1,32 @@
+<?php 
+  session_start();
+  require_once "conn.php";
+  if($_SERVER["REQUEST_METHOD"]=="POST"){
+    $email = $_POST['email'];
+    $senha = $_POST['senha'];
+
+    $sql = "SELECT * FROM login  WHERE email = ? AND email = ?";
+  }
+    $stmt = $conn-> prepare($sql);
+    $stmt ->bind_param("ss", $email, $senha);
+    $stmt -> execute();
+
+    $result = $stmt-> get_result();
+
+    if($result->num_rows===1){ //verificar registros
+      $row - $result-> fetch_assoc(); //armazena
+      if(password_verify($senha, $row['senha'])){
+        $_SESSION['loggedin']= true; //indica q o user foi autenticado
+        header("Location: perfil.html");
+        exit;
+      }
+    }
+  
+  else{
+    $error = "Usuário ou senha incorretos";
+  }
+
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -35,7 +64,7 @@
               <a class="nav-link active" href="login.php">Login</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="cadastro.php">Cadastre-se</a>
+              <a class="nav-link" href="cadastrar.php">Cadastre-se</a>
             </li>
         </div>
       </div>
@@ -49,20 +78,20 @@
 
       <fieldset>
         <legend for="exampleInputEmail1">E-mail</legend>
-        <input type="email" id="exampleInputEmail1" class="input-only-text">
+        <input type="email" id="exampleInputEmail1" class="input-only-text"name = "email" required>
         <br>
       </fieldset>
       
       <fieldset>
         <legend for="exampleInputPassword1">Senha</legend>
-        <input type="password" id="exampleInputPassword1" class="input-only-text">
+        <input type="password" id="exampleInputPassword1" class="input-only-text" name = "senha" required>
       </fieldset>
       
       <div class="mb-3 form-check">
         <input type="checkbox" class="form-check-input" id="exampleCheck1">
         <label class="form-check-label" for="exampleCheck1">Lembrar-me</label>
       </div>
-      <button type="submit" class="btn btn-danger" style="margin-bottom: 20px;" id="botao-login"><a href="perfil.html">Entrar</a></button>
+      <button type="submit" class="btn btn-danger" style="margin-bottom: 20px;" id="botao-login" name="submit_log" value="logar"><a href="perfil.html">Entrar</a></button>
       <br>
       <a href="esquecisenha.html" id="link-senha">Esqueceu sua senha?</a>
     </form>
