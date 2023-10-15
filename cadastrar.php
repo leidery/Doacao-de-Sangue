@@ -1,9 +1,3 @@
-<?php 
-
-
-?>
-
-
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -207,12 +201,12 @@
 
       <fieldset>
         <legend for="senha">Senha: </legend>
-        <input type="password" id="password" name="senha" class="input-only-text"required>
+        <input type="password" id="senha" name="senha" class="input-only-text"required>
       </fieldset>
     
       <fieldset>
         <legend for="confsenha">Confirmar senha: </legend>
-        <input type="password" id="password" name="confsenha" class="input-only-text"required>
+        <input type="password" id="confsenha" name="confsenha" class="input-only-text"required>
       </fieldset>
 
       <fieldset>
@@ -246,9 +240,8 @@
         <label class="form-check-label" for="notificacao">Deseja receber notificações via e-mail ?</label>
       </div>
 
-      <button class="btn btn-danger" id="botao-cadastro" style="margin-bottom: 20px;" value="Enviar" type="submit" name="enviar_cad">
-          <a href="login.php">Enviar</a>
-        </button>
+      <button class="btn btn-danger" id="botao-cadastro" style="margin-bottom: 20px;" type="submit" name="enviar_cad">Enviar</button>
+
         <br>
       </form>
     </div>

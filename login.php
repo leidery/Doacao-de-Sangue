@@ -1,30 +1,37 @@
-<?php 
-  session_start();
-  require_once "conn.php";
-  if($_SERVER["REQUEST_METHOD"]=="POST"){
+<?php
+session_start();
+require_once "conn.php";
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = $_POST['email'];
     $senha = $_POST['senha'];
 
-    $sql = "SELECT * FROM login  WHERE email = ? AND email = ?";
-  }
-    $stmt = $conn-> prepare($sql);
-    $stmt ->bind_param("ss", $email, $senha);
-    $stmt -> execute();
+    $sql = "SELECT id, email, senha FROM login WHERE email = ?";
+    $stmt = $conn->prepare($sql);
+    $stmt->bind_param("s", $email);
+    $stmt->execute();
 
-    $result = $stmt-> get_result();
+    $stmt->store_result();
 
-    if($result->num_rows===1){ //verificar registros
-      $row - $result-> fetch_assoc(); //armazena
-      if(password_verify($senha, $row['senha'])){
-        $_SESSION['loggedin']= true; //indica q o user foi autenticado
-        header("Location: perfil.html");
-        exit;
-      }
+    if ($stmt->num_rows === 1) {
+        $stmt->bind_result($id, $email, $hashed_password);
+        $stmt->fetch();
+
+        if (password_verify($senha, $hashed_password)) {
+            $_SESSION['loggedin'] = true;
+            $_SESSION['id'] = $id;
+            $_SESSION['email'] = $email;
+            header("Location: perfil.html");
+            exit;
+        } else {
+            $error = "Usuário ou senha incorretos";
+        }
+    } else {
+        $error = "Usuário ou senha incorretos";
     }
-  
-  else{
-    $error = "Usuário ou senha incorretos";
-  }
+
+    $stmt->close();
+}
 
 ?>
 <!DOCTYPE html>
