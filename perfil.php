@@ -101,7 +101,7 @@
               <strong>Disponibilidade:</strong> Segunda a sexta-feira, das 9h às 17h
             </li>
           </ul>
-          <a href="editarperfil.html" class="btn btn-danger mt-3">Editar Perfil</a>
+          <a href="editarperfil.php" class="btn btn-danger mt-3">Editar Perfil</a>
         </aside>
       </div>
       

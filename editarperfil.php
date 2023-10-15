@@ -216,7 +216,7 @@
                 <input type="checkbox" class="form-check-input" id="notificacoes">
                 <label class="form-check-label" for="notificacoes">Desejo receber notificações sobre campanhas de doação</label>
             </div>
-            <button type="submit" class="btn btn-danger" id="botperfil"><a href="perfil.html">Salvar Alterações</a></button>
+            <button type="submit" class="btn btn-danger" id="botperfil"><a href="perfil.php">Salvar Alterações</a></button>
         </form>
     </div>
     <br>
