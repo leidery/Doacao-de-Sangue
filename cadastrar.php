@@ -149,11 +149,9 @@
       </div>
 
       <button class="btn btn-danger" id="botao-cadastro" style="margin-bottom: 20px;" type="submit" name="enviar_cad">Enviar</button>
-
     </form>
   </div>
 </div>
-
 </body>
 <footer class="footer">
   <p>&copy; Doação de Sangue</p>

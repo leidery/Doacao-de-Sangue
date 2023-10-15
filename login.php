@@ -3,24 +3,24 @@ session_start();
 require_once "conn.php";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $email = $_POST['email'];
-    $senha = $_POST['senha'];
+    $email_log = $_POST['email_log'];
+    $senha_log = $_POST['senha_log'];
 
-    $sql = "SELECT id, email, senha FROM login WHERE email = ?";
+    $sql = "SELECT id_log, email_log, senha_log FROM login WHERE email_log = ?";
     $stmt = $conn->prepare($sql);
-    $stmt->bind_param("s", $email);
+    $stmt->bind_param("s", $email_log);
     $stmt->execute();
 
     $stmt->store_result();
 
     if ($stmt->num_rows === 1) {
-        $stmt->bind_result($id, $email, $hashed_password);
+        $stmt->bind_result($id_log, $email_log, $hashed_password);
         $stmt->fetch();
 
-        if (password_verify($senha, $hashed_password)) {
+        if (password_verify($senha_log, $hashed_password)) {
             $_SESSION['loggedin'] = true;
-            $_SESSION['id'] = $id;
-            $_SESSION['email'] = $email;
+            $_SESSION['id'] = $id_log; // Corrigi aqui, use id_log para a sessão
+            $_SESSION['email'] = $email_log;
             header("Location: perfil.html");
             exit;
         } else {
@@ -32,6 +32,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     $stmt->close();
 }
+
 
 ?>
 <!DOCTYPE html>
@@ -84,14 +85,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
       <h1>Login</h1>
 
       <fieldset>
-        <legend for="exampleInputEmail1">E-mail</legend>
-        <input type="email" id="exampleInputEmail1" class="input-only-text"name = "email" required>
+        <legend for="email_log">E-mail</legend>
+        <input type="email" id="email_log" class="input-only-text"name = "email_log" required>
         <br>
       </fieldset>
       
       <fieldset>
-        <legend for="exampleInputPassword1">Senha</legend>
-        <input type="password" id="exampleInputPassword1" class="input-only-text" name = "senha" required>
+        <legend for="senha_log">Senha</legend>
+        <input type="password" id="exampleInputPassword1" class="input-only-text" name = "senha_log" required>
       </fieldset>
       
       <div class="mb-3 form-check">
