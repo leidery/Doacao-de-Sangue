@@ -6,10 +6,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email_log = $_POST['email_log'];
     $senha_log = $_POST['senha_log'];
 
-    $sql = "SELECT id_log, email_log, senha_log FROM login WHERE email_log = ?";
+    $sql = "SELECT id_log, email_log, senha_log FROM login WHERE email_log = ? AND senha_log = ?";
     $stmt = $conn->prepare($sql);
-    $stmt->bind_param("s", $email_log);
+    $stmt->bind_param("ss", $email_log, $senha_log);
     $stmt->execute();
+    
 
     $stmt->store_result();
 
@@ -21,7 +22,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $_SESSION['loggedin'] = true;
             $_SESSION['id'] = $id_log; // Corrigi aqui, use id_log para a sessão
             $_SESSION['email'] = $email_log;
-            header("Location: perfil.html");
+            header("Location: perfil.php");
             exit;
         } else {
             $error = "Usuário ou senha incorretos";
@@ -99,7 +100,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <input type="checkbox" class="form-check-input" id="exampleCheck1">
         <label class="form-check-label" for="exampleCheck1">Lembrar-me</label>
       </div>
-      <button type="submit" class="btn btn-danger" style="margin-bottom: 20px;" id="botao-login" name="submit_log" value="logar"><a href="perfil.html">Entrar</a></button>
+      <button type="submit" class="btn btn-danger" style="margin-bottom: 20px;" id="botao-login" name="submit_log" value="logar">Entrar</button>
       <br>
       <a href="esquecisenha.html" id="link-senha">Esqueceu sua senha?</a>
     </form>

@@ -1,3 +1,33 @@
+<?php
+session_start();
+
+// Verifica se o usuário está logado
+if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
+    // Se o usuário não está logado, redireciona para a página de login
+    header("Location: login.php");
+    exit;
+}
+
+// Verifica se o usuário está cadastrado (baseado no email)
+require_once "conn.php";
+
+$email_log = $_SESSION['email']; // Obtém o email do usuário da sessão
+
+$sql = "SELECT id_log, email_log FROM login WHERE email_log = ?";
+$stmt = $conn->prepare($sql);
+$stmt->bind_param("s", $email_log);
+$stmt->execute();
+$stmt->store_result();
+
+if ($stmt->num_rows !== 1) {
+    // Se o usuário não está cadastrado, redireciona para uma página de erro ou exibe uma mensagem
+    echo "Usuário não cadastrado."; // Você pode personalizar esta mensagem conforme necessário
+    exit;
+}
+
+// Restante do conteúdo da página perfil.php...
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>

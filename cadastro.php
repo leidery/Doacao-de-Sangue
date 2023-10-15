@@ -14,8 +14,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $dataNascimento = test_input($_POST['data_nascimento']);
     $sexo = test_input($_POST['sexo']);
     $tipoSanguineo = test_input($_POST['tipo_sanguineo']);
-    $estado = test_input($_POST['estado']);
-    $cidade = test_input($_POST['cidade']);
     $telefone = test_input($_POST['telefone']);
     $cep = test_input($_POST['cep']);
     $endereco = test_input($_POST['endereco']);
@@ -37,12 +35,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $senhaHash = password_hash($senha, PASSWORD_DEFAULT);
 
         
-        $stmt = $conn->prepare("INSERT INTO cadastro (nome_cad, data_nascimento, sexo, tipo_sanguineo, estado, cidade, telefone, cep, endereco, num_endereco, email, senha, rg, cpf, medicamento, info_saude, notificacao) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
+        $stmt = $conn->prepare("INSERT INTO cadastro (nome_cad, data_nascimento, sexo, tipo_sanguineo, telefone, cep, endereco, num_endereco, email, senha, rg, cpf, medicamento, info_saude, notificacao) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
 
         
         if ($stmt) {
             
-            $stmt->bind_param("ssssssssssssssssi", $nome_cad, $dataNascimento, $sexo, $tipoSanguineo, $estado, $cidade, $telefone, $cep, $endereco, $numero, $email, $senhaHash, $rg, $cpf, $medicamento, $informacoesSaude, $notificacoes);
+            $stmt->bind_param("ssssssssssssssi", $nome_cad, $dataNascimento, $sexo, $tipoSanguineo, $telefone, $cep, $endereco, $numero, $email, $senhaHash, $rg, $cpf, $medicamento, $informacoesSaude, $notificacoes);
 
             
             if ($stmt->execute()) {
