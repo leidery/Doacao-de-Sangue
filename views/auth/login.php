@@ -1,6 +1,6 @@
 <?php
 session_start();
-require_once "conn.php";
+require_once "../../conn.php";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email_log = $_POST['email_log'];
