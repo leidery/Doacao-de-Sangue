@@ -1,17 +1,22 @@
 <?php
-if (session_status() == PHP_SESSION_NONE) {
-    session_start();
-}
+    // Directory path:
+    define('SITE_ROOT', __DIR__);
+        
+    if (session_status() == PHP_SESSION_NONE) {
+        session_start();
+    }
+    
+    // Connecting database && error handling:
+    try {
+        $servername = "localhost"; 
+        $username = "root"; 
+        $password = ""; 
+        $dbname = "doacao"; 
 
-$servername = "localhost"; 
-$username = "root"; 
-$password = ""; 
-$dbname = "doacao"; 
-
-$conn  = new mysqli($servername, $username, $password, $dbname);
-
-// Verifica se houve algum erro na conexão
-if ($conn->connect_error) {
-    die("Falha na conexão: " . $conn->connect_error);
-}
+        // Adding charset=utf-8 because of the Unicode:
+        $conn = new PDO('mysql:host='.$servername.';dbname='.$dbname.';charset=utf8', $username, $password);
+        $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    } catch(PDOException $e) {
+        echo 'ERROR: ' . $e->getMessage();
+    }
 ?>
