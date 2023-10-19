@@ -78,7 +78,7 @@
                 <div class="mb-3">
                     <label for="rg" class="form-label">RG:</label>
                     <input
-                        type="date"
+                        type="text"
                         class="form-control"
                         name="rg"
                         id="rg"
@@ -87,9 +87,9 @@
                 </div>
 
                 <div class="mb-3">
-                    <label for="rg" class="form-label">CPF:</label>
+                    <label for="cpf" class="form-label">CPF:</label>
                     <input
-                        type="date"
+                        type="text"
                         class="form-control"
                         name="cpf"
                         id="cpf"
@@ -101,13 +101,13 @@
                     <label>Toma algum medicamento?</label>
                     <div class="form-check">
                         <input class="form-check-input" type="radio" value="sim" name="medicamento" />
-                        <label class="form-check-label" for="data_nascimento">
+                        <label class="form-check-label" for="medicamento">
                             Sim
                         </label>
                     </div>
                     <div class="form-check">
                         <input class="form-check-input" type="radio" value="nao" name="medicamento" />
-                        <label class="form-check-label" for="data_nascimento">
+                        <label class="form-check-label" for="medicamento">
                             Não
                         </label>
                     </div>
@@ -129,7 +129,6 @@
                         class="form-control"
                         name="telefone"
                         id="telefone"
-                        pattern="([0-9]{2})[0-9]{4}-[0-9]{4}"
                         placeholder="(00) 0000-0000"
                         required
                     />
@@ -162,7 +161,7 @@
                 </div>
 
                 <div class="mb-3">
-                    <label for="cep" class="form-label">Número:</label>
+                    <label for="num_endereco" class="form-label">Número:</label>
                     <input
                         type="text"
                         class="form-control"
@@ -177,7 +176,7 @@
             <fieldset>
                 <legend>Informações de Login</legend>
                 <div class="mb-3">
-                    <label for="rg" class="form-label">E-mail:</label>
+                    <label for="email" class="form-label">E-mail:</label>
                     <input
                         type="email"
                         class="form-control"
