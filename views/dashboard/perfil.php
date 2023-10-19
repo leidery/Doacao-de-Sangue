@@ -66,10 +66,10 @@ if ($stmt->num_rows !== 1) {
         <div class="offcanvas-body">
           <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
             <li class="nav-item">
-              <a class="nav-link active" class="nav-link" aria-current="page" href="perfil.php">Perfil</a>
+              <a class="nav-link active" class="nav-link" aria-current="page" href="/perfil">Perfil</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="index.html">Sair</a>
+              <a class="nav-link" href="/logout">Sair</a>
             </li>
         </div>
       </div>

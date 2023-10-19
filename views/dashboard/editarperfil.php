@@ -42,7 +42,7 @@
                     <a class="nav-link active" aria-current="page" class="nav-link" href="editarperfil.php">Editar perfil</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="index.html">Sair</a>
+                    <a class="nav-link" href="/logout">Sair</a>
                 </li>
             </div>
           </div>

@@ -1,4 +1,4 @@
-<?php include '../../../config.php'; ?>
+<?php include SITE_ROOT.'/config.php'; ?>
 
 <!DOCTYPE html>
 <html lang="pt-br">

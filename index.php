@@ -1,5 +1,7 @@
 <?php
-    // TODO: Global vars here
+    // Global paths:
+    define('SITE_ROOT', __DIR__);
+    define('WEBSITE_LAYOUT', __DIR__.'/views/website/layout');
 
     // Routes settings:
     include 'routes/index.php';

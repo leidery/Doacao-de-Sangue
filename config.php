@@ -1,7 +1,4 @@
 <?php
-    // Directory path:
-    define('SITE_ROOT', __DIR__);
-    define('WEBSITE_LAYOUT', __DIR__.'/views/website/layout');
 
     global $configPath;
     $configPath = dirname(__FILE__) . '/config.php';

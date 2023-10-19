@@ -1,6 +1,6 @@
 <?php
     $pageTitle = "Login";
-    $content = file_get_contents('./form.php');
+    $content = file_get_contents(__DIR__ . '/form.php');
 
-    include '../../website/layout/index.php';
+    include WEBSITE_LAYOUT.'/index.php';
 ?>

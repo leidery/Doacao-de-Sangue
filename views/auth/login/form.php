@@ -45,7 +45,7 @@
                 Entrar
             </button>
 
-            <a href="esquecisenha.html" id="link-senha">Esqueceu sua senha?</a>
+            <a href="/esqueci-a-senha" id="link-senha">Esqueceu sua senha?</a>
         </form>
     </div>
 </div>
