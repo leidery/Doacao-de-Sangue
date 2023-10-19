@@ -1,6 +1,6 @@
 <div class="wrapper">
     <div class="container" id="cadastro">
-        <form action="cadastro.php" method="post">
+        <form action="./cadastro.php" method="post">
             <h1>Cadastre-se</h1>
             <fieldset>
                 <legend for="nome_cad">Nome Completo: </legend>
