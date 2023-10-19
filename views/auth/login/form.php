@@ -1,7 +1,7 @@
 <div class="wrapper">
     <div class="container" id="login">
         <form
-            action="controllers/login.php"
+            action="<?php echo SITE_ROOT ?>/controllers/login.php"
             method="GET"
             id="loginForm"
         >
