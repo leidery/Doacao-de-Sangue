@@ -80,32 +80,32 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     </div>
   </nav>
   <br><br><br>
-<div class="wrapper-login">
-  <div class="container" id="login">
-    <form action="login.php" method = "post">
-      <h1>Login</h1>
+  <div class="wrapper-login">
+    <div class="container" id="login">
+      <form action="login.php" method = "post">
+        <h1>Login</h1>
 
-      <fieldset>
-        <legend for="email_log">E-mail</legend>
-        <input type="email" id="email_log" class="input-only-text"name = "email_log" required>
+        <fieldset>
+          <legend for="email_log">E-mail</legend>
+          <input type="email" id="email_log" class="input-only-text"name = "email_log" required>
+          <br>
+        </fieldset>
+        
+        <fieldset>
+          <legend for="senha_log">Senha</legend>
+          <input type="password" id="exampleInputPassword1" class="input-only-text" name = "senha_log" required>
+        </fieldset>
+        
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Lembrar-me</label>
+        </div>
+        <button type="submit" class="btn btn-danger" style="margin-bottom: 20px;" id="botao-login" name="submit_log" value="logar">Entrar</button>
         <br>
-      </fieldset>
-      
-      <fieldset>
-        <legend for="senha_log">Senha</legend>
-        <input type="password" id="exampleInputPassword1" class="input-only-text" name = "senha_log" required>
-      </fieldset>
-      
-      <div class="mb-3 form-check">
-        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-        <label class="form-check-label" for="exampleCheck1">Lembrar-me</label>
-      </div>
-      <button type="submit" class="btn btn-danger" style="margin-bottom: 20px;" id="botao-login" name="submit_log" value="logar">Entrar</button>
-      <br>
-      <a href="esquecisenha.html" id="link-senha">Esqueceu sua senha?</a>
-    </form>
+        <a href="esquecisenha.html" id="link-senha">Esqueceu sua senha?</a>
+      </form>
+    </div>
   </div>
-</div>
   
    <footer class="footer">
     <p>&copy; Doação de Sangue</p>
