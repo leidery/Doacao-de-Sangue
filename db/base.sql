@@ -4,7 +4,9 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `usuarios` (
   `id` int NOT NULL,
-  `nome` varchar(50) NOT NULL
+  `name` varchar(50) NOT NULL,
+  `email` varchar(50) NOT NULL,
+  `password` varchar(15) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 COMMIT;
