@@ -1,64 +1,50 @@
 <?php
 
-    if ($_SERVER["REQUEST_METHOD"] == "POST") {
-        
-        function test_input($data) {
-            $data = trim($data);
-            $data = stripslashes($data);
-            $data = htmlspecialchars($data);
-            return $data;
-        }
+try {
+    $stmt = $conn->prepare("INSERT INTO usuarios (nome, data_nascimento, sexo)
+    VALUES (:nome, :data_nascimento, :sexo)");
+    // $stmt = $conn->prepare("INSERT INTO usuarios (nome, data_nascimento, sexo,
+    // tipo_sanguineo, telefone, cep, endereco, num_endereco, email, senha, rg, cpf, medicamento, info_saude, notificacao)
+    // VALUES (:nome, :data_nascimento, :sexo, :tipo_sanguineo, :telefone, :cep, :endereco, :num_endereco, :email,
+    // :senha, :rg, :cpf, :medicamento, :info_saude, :notificacao)");
 
-        $nome_cad = test_input($_POST['nome_cad']);
-        $dataNascimento = test_input($_POST['data_nascimento']);
-        $sexo = test_input($_POST['sexo']);
-        $tipoSanguineo = test_input($_POST['tipo_sanguineo']);
-        $telefone = test_input($_POST['telefone']);
-        $cep = test_input($_POST['cep']);
-        $endereco = test_input($_POST['endereco']);
-        $numero = test_input($_POST['num_endereco']);
-        $email = test_input($_POST['email']);
-        $senha = test_input($_POST['senha']);
-        $confSenha = test_input($_POST['confsenha']);
-        $rg = test_input($_POST['rg']);
-        $cpf = test_input($_POST['cpf']);
-        $medicamento = isset($_POST['medicamento']) ? test_input($_POST['medicamento']) : "nao";
-        $informacoesSaude = isset($_POST['info_saude']) ? test_input($_POST['info_saude']) : "";
-        $notificacoes = isset($_POST['notificacao']) ? 1 : 0;
+    $nome = $_POST['nome'];
+    $data_nascimento = $_POST['data_nascimento'];
+    $sexo = $_POST['sexo'];
+    // $tipo_sanguineo = $_POST['tipo_sanguineo'];
+    // $telefone = $_POST['telefone'];
+    // $cep = $_POST['cep'];
+    // $endereco = $_POST['endereco'];
+    // $num_endereco = $_POST['num_endereco'];
+    // $email = $_POST['email'];
+    // $senha = $_POST['senha'];
+    // $rg = $_POST['rg'];
+    // $cpf = $_POST['cpf'];
+    // $medicamento = $_POST['medicamento'];
+    // $info_saude = $_POST['info_saude'];
+    // $notificacao = $_POST['notificacao']; // Notificação por e-mail:
 
-        
-        if ($senha !== $confSenha) {
-            echo "As senhas não correspondem. Por favor, tente novamente.";
-        } else {
-            
-            $senhaHash = password_hash($senha, PASSWORD_DEFAULT);
+    $stmt->bindParam(':nome', $nome);
+    $stmt->bindParam(':data_nascimento', $data_nascimento);
+    $stmt->bindParam(':sexo', $sexo);
+    // $stmt->bindParam(':tipo_sanguineo', $tipo_sanguineo);
+    // $stmt->bindParam(':telefone', $telefone);
+    // $stmt->bindParam(':cep', $cep);
+    // $stmt->bindParam(':endereco', $endereco);
+    // $stmt->bindParam(':num_endereco', $num_endereco);
+    // $stmt->bindParam(':email', $email);
+    // $stmt->bindParam(':senha', $senha);
+    // $stmt->bindParam(':rg', $rg);
+    // $stmt->bindParam(':cpf', $cpf);
+    // $stmt->bindParam(':medicamento', $medicamento);
+    // $stmt->bindParam(':info_saude', $info_saude);
+    // $stmt->bindParam(':notificacao', $notificacao);
 
-            
-            $stmt = $conn->prepare("INSERT INTO cadastro (nome_cad, data_nascimento, sexo, tipo_sanguineo, telefone, cep, endereco, num_endereco, email, senha, rg, cpf, medicamento, info_saude, notificacao) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
+    $stmt->execute();
+    $stmt->closeCursor();
 
-            
-            if ($stmt) {
-                
-                $stmt->bind_param("ssssssssssssssi", $nome_cad, $dataNascimento, $sexo, $tipoSanguineo, $telefone, $cep, $endereco, $numero, $email, $senhaHash, $rg, $cpf, $medicamento, $informacoesSaude, $notificacoes);
+} catch (PDOException $e) {
+    echo "Erro ao salvar produto: " . $e->getMessage();
+}
 
-                
-                if ($stmt->execute()) {
-                    
-                    
-                    header("Location: login.php");
-                    exit();
-                } else {
-                    echo "Erro ao cadastrar: " . $stmt->error;
-                }
-
-                
-                $stmt->close();
-            } else {
-                echo "Erro na preparação da consulta.";
-            }
-        }
-
-        // Fechar a conexão
-        $conn->close();
-    }
 ?>

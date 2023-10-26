@@ -1,20 +1,24 @@
 <div class="wrapper">
     <div class="container" id="cadastro">
-        <form action="./cadastro.php" method="post">
+        <form
+            action="./cadastro.php"
+            method="post"
+            id="registerForm"
+        >
             <h1>Cadastre-se</h1>
 
             <!-- Dados Pessoais -->
             <fieldset>
                 <legend>Dados Pessoais</legend>
                 <div class="mb-3">
-                    <label for="nome_cad" class="form-label">Nome Completo:</label>
+                    <label for="nome" class="form-label">Nome Completo:</label>
                     <input
                         type="text"
                         class="form-control"
-                        name="nome_cad"
-                        id="nome_cad"
+                        name="nome"
+                        id="nome"
                         placeholder="Digite seu nome"
-                        required
+                        
                     />
                 </div>
 
@@ -26,7 +30,7 @@
                         name="data_nascimento"
                         id="data_nascimento"
                         placeholder="dd/mm/aaa"
-                        required
+                        
                     />
                 </div>
 
@@ -34,13 +38,13 @@
                     <label>Sexo:</label>
                     <div class="form-check">
                         <input class="form-check-input" type="radio" value="masculino" name="sexo" id="sexo_masculino">
-                        <label class="form-check-label" for="data_nascimento">
+                        <label class="form-check-label" for="sexo">
                             Masculino
                         </label>
                     </div>
                     <div class="form-check">
                         <input class="form-check-input" type="radio" value="feminino" name="sexo" id="sexo_feminino">
-                        <label class="form-check-label" for="data_nascimento">
+                        <label class="form-check-label" for="sexo">
                             Feminino
                         </label>
                     </div>
@@ -59,7 +63,7 @@
                             id="tipo_sanguineo"
                             name="tipo_sanguineo"
                             class="form-select" aria-label="Selecione uma opção"
-                            required
+                            
                         >
                             <option selected disabled>Selecione uma opção</option>
                             <option class="select-option" value="Desconhecido">Desconhecido</option>
@@ -82,7 +86,7 @@
                         class="form-control"
                         name="rg"
                         id="rg"
-                        required
+                        
                     />
                 </div>
 
@@ -93,7 +97,7 @@
                         class="form-control"
                         name="cpf"
                         id="cpf"
-                        required
+                        
                     />
                 </div>
 
@@ -130,7 +134,7 @@
                         name="telefone"
                         id="telefone"
                         placeholder="(00) 0000-0000"
-                        required
+                        
                     />
                 </div>
             </fieldset>
@@ -145,7 +149,7 @@
                         class="form-control"
                         name="cep"
                         id="cep"
-                        required
+                        
                     />
                 </div>
 
@@ -156,7 +160,7 @@
                         class="form-control"
                         name="endereco"
                         id="endereco"
-                        required
+                        
                     />
                 </div>
 
@@ -167,7 +171,7 @@
                         class="form-control"
                         name="num_endereco"
                         id="num_endereco"
-                        required
+                        
                     />
                 </div>
             </fieldset>
@@ -183,7 +187,7 @@
                         name="email"
                         id="email"
                         placeholder="seu_email@email.com"
-                        required
+                        
                     />
                 </div>
 
@@ -195,7 +199,7 @@
                         name="senha"
                         id="senha"
                         placeholder="Digite sua senha"
-                        required
+                        
                     />
                 </div>
 
@@ -207,7 +211,7 @@
                         name="confsenha"
                         id="confsenha"
                         placeholder="Confirme sua senha"
-                        required
+                        
                     />
                 </div>
             </fieldset>
