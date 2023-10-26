@@ -18,7 +18,7 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
         
         <!-- Custom CSS -->
-        <link rel="stylesheet" type="text/css" href="<?php echo SITE_ROOT ?>/public/css/style.css">
+        <link rel="stylesheet" type="text/css" href="<?php echo SITE_ROOT ?>/public/css/index.css">
         
         <title>Doação de Sangue | <?php echo $pageTitle; ?></title>
     </head>
