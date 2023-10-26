@@ -1,5 +1,5 @@
 <form
-    action="<?php echo SITE_ROOT ?>/controllers/login.php"
+    action="/controllers/login.php"
     method="GET"
 >
     <legend>Login</legend>
