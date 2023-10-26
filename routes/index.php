@@ -10,7 +10,7 @@
         $projectName.'/login' => SITE_ROOT.'/views/auth/login/index.php',
         $projectName.'/cadastrar' => SITE_ROOT.'/views/auth/register/index.php',
         $projectName.'/perfil' => SITE_ROOT.'/views/dashboard/perfil/index.php', // Rota para perfil
-        $projectName.'/hemobanco' => SITE_ROOT.'/views/dashboard/hemobanco.php', // Rota para hemobanco
+        $projectName.'/hemobanco' => SITE_ROOT.'/views/dashboard/hemobanco/index.php', // Rota para hemobanco
     ];
 
 
