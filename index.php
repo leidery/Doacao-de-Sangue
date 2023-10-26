@@ -3,7 +3,9 @@
     define('SITE_ROOT', __DIR__);
     define('PUBLIC_ASSETS', __DIR__.'/public');
     define('WEBSITE_LAYOUT', __DIR__.'/views/website/layout');
+    define('DASHBOARD_LAYOUT', __DIR__.'/views/dashboard/layout');
     define('WEBSITE_PAGES', __DIR__.'/views/website/pages');
+    define('DASHBOARD_PAGES', __DIR__.'/views/dashboard');
 
     // Routes settings:
     include 'routes/index.php';
