@@ -1,0 +1,8 @@
+{
+    "name": "doacao/sangue",
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        }
+    }
+}
