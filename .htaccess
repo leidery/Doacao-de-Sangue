@@ -1,11 +1,8 @@
-
-# Enabling the rewriting engine:
+Options +SymLinksIfOwnerMatch
 RewriteEngine On
 
-# Setting the base URL for the project:
-RewriteBase /Doacao-de-Sangue/
+# Allow Installatron requests
+RewriteCond %{REQUEST_FILENAME} deleteme\.\w+\.php
+RewriteRule (.*) - [L] 
 
-# Redirect all requests to index.php except for existing files or directories:
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^(.*)$ index.php [QSA,L]
+RewriteRule ^ index.php [L]
