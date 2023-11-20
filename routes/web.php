@@ -16,6 +16,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () { return view('website.pages.home'); });
 Route::get('/sobre-nos', function () { return view('website.pages.about-us'); });
+Route::get('/duvidas-frequentes', function () { return view('website.pages.faq'); });
 Route::get('/politica-de-privacidade', function () { return view('website.pages.privacy-policy'); });
 
 Route::get('/dashboard', function () {
