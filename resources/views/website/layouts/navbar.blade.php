@@ -21,6 +21,7 @@
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
               <li><a class="dropdown-item" href="{{ url('/') }}">Home</a></li>
+              <li><a class="dropdown-item" href="{{ url('/duvidas-frequentes') }}">Dúvidas frequentes</a></li>
               <li><a class="dropdown-item" href="{{ url('/sobre-nos') }}">Sobre nós</a></li>
               <li><a class="dropdown-item" href="{{ url('/politica-de-privacidade') }}">Política de privacidade</a></li>
               <li><hr class="dropdown-divider"></li>
