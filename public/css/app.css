@@ -1,6 +1,41 @@
-#footer {
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+.header {
+    height: 40vh;
+
+    color: #fff;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.btn-blood {
+    background-color: #D40000;
+    color: #ffffff;
+
+    text-transform: uppercase;
+}
+
+footer {
+    margin-top: auto;
+    height: 5vh;
+    display: flex;
+
     background-color: #4d4d4d;
     color: #ffffff;
+
     font-size: 18px;
-    text-align: center;
+}
+
+footer > * {
+    margin: auto;
 }
