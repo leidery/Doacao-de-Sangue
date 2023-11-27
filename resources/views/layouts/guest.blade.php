@@ -13,6 +13,7 @@
         
         <!-- Custom CSS -->
         <link rel="stylesheet" type="text/css" href="{{ asset('css/app.css') }}">
+        <link rel="stylesheet" type="text/css" href="{{ asset('public/css/app.css') }}">
     </head>
     <body>
         {{ $slot }}
