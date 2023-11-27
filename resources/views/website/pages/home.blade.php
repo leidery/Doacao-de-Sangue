@@ -9,5 +9,6 @@
         </a>
     </x-website.header>
 
+    @include('website.pages.home.cards-info')
     @include('website.layouts.footer')
 </x-guest-layout>
