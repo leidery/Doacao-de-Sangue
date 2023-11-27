@@ -1,7 +1,7 @@
 <x-guest-layout>
     @include('website.layouts.navbar')
 
-    <x-website.header bgImg="img/bg-header.png">
+    <x-website.header bgImg="{{ asset('img/bg-header.png') }}">
         <h1>Doação de sangue</h1>
         <h2>Bora salvar vidas?</h2>
         <a href="{{ url('login') }}">
