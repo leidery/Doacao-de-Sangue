@@ -11,11 +11,12 @@
                 Está em dúvida se pode doar sangue?
                 Faça agora um teste online para
                 verificar se está apto a doar sangue
-                no hemobanco escolhido,
-                evitando que você perca tempo
-                se deslocando até o hemobanco
-                para receber uma negativa.
+                no hemobanco escolhido:
             </p>
+
+            <a href="{{ url('teste-posso-doar') }}">
+                <button class="btn btn-danger btn-blood mt-3 px-5 w-100">Fazer teste</button>
+            </a>
         </x-website.card-info>
         <x-website.card-info
             title="Hemobanco"
