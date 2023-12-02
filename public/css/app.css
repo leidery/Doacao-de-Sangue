@@ -46,3 +46,16 @@ footer {
 footer > * {
     margin: auto;
 }
+
+/* AUTH */
+.login__bg {
+    background-image: url(../img/bg-header.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.auth__form-box {
+    max-width: 500px;
+    margin: auto;
+}
