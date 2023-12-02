@@ -9,7 +9,7 @@ h2 {
 }
 
 .header {
-    height: 40vh;
+    height: 55vh;
 
     color: #fff;
 
@@ -40,7 +40,7 @@ footer {
     background-color: #4d4d4d;
     color: #ffffff;
 
-    font-size: 18px;
+    font-size: 14px;
 }
 
 footer > * {
