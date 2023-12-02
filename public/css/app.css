@@ -25,6 +25,13 @@ h2 {
     text-transform: uppercase;
 }
 
+.card-info__icon {
+    display: flex;
+    margin: 20px auto;
+    width: 50px;
+    height: auto;
+}
+
 footer {
     margin-top: auto;
     height: 5vh;
