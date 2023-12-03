@@ -64,3 +64,11 @@ footer > * {
     font-weight: 700;
     color: green;
 }
+
+/* BLOOD BANK */
+.bloodbank__photo {
+    width: 300px;
+    height: 250px;
+    background-position: center;
+    background-size: cover;
+}
