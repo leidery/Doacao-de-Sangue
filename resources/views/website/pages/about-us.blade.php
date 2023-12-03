@@ -1,6 +1,4 @@
 <x-guest-layout>
-    @include('website.layouts.navbar')
-
     <x-website.header bgImg="img/bg-header.png">
         <h1>Quem somos</h1>
     </x-website.header>
@@ -27,5 +25,4 @@
             <button class="btn btn-danger btn-blood mt-3 px-5">Agendar doação</button>
         </a>
     </div>
-    @include('website.layouts.footer')
 </x-guest-layout>

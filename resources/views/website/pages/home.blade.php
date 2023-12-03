@@ -1,5 +1,4 @@
 <x-guest-layout>
-    @include('website.layouts.navbar')
 
     <x-website.header bgImg="{{ asset('img/bg-header.png') }}">
         <h1>Doação de sangue</h1>
@@ -11,5 +10,4 @@
 
     @include('website.pages.home.doe-sangue')
     @include('website.pages.home.cards-info')
-    @include('website.layouts.footer')
 </x-guest-layout>

@@ -1,6 +1,4 @@
 <x-guest-layout>
-    @include('website.layouts.navbar')
-
     <x-website.header bgImg="img/bg-header.png">
         <h1>Política de Privacidade</h1>
     </x-website.header>
@@ -37,6 +35,4 @@
             </p>
         </div>
     </div>
-
-    @include('website.layouts.footer')
 </x-guest-layout>

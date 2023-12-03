@@ -1,6 +1,4 @@
 <x-guest-layout>
-    @include('website.layouts.navbar')
-
     <x-website.header bgImg="{{ asset('img/bg-header.png') }}">
         <h1>Perguntas Frequentes</h1>
     </x-website.header>
@@ -227,7 +225,4 @@
           </ul>
       </div>
     </div>
-
-
-    @include('website.layouts.footer')
 </x-guest-layout>
