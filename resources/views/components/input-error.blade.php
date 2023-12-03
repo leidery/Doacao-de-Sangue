@@ -3,7 +3,7 @@
 @if ($messages)
     <ul {{ $attributes->merge(['class' => 'input-group-text']) }}>
         @foreach ((array) $messages as $message)
-            <li>{{ $message }}</li>
+            <li style="color: red">{{ $message }}</li>
         @endforeach
     </ul>
 @endif

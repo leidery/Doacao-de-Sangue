@@ -59,3 +59,8 @@ footer > * {
     max-width: 500px;
     margin: auto;
 }
+
+.auth__session-status {
+    font-weight: 700;
+    color: green;
+}
