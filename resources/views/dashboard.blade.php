@@ -49,7 +49,7 @@
             
             @if(count($bloodbanks) < 1)
                 <div class="col-12 mt-2">
-                    <p>Sem bancos de sangue disponíveis no CEP informado</p>
+                    <p>Sem bancos de sangue disponíveis</p>
                 </div>
             @endif
             @foreach ($bloodbanks as $bloodbank)
