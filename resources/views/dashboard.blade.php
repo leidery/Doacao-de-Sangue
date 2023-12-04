@@ -54,7 +54,7 @@
             @endif
             @foreach ($bloodbanks as $bloodbank)
                 <div class="col-12 mt-2">
-                    <x-dashboard.bloodbankcard
+                    <x-dashboard.bloodbank-card
                     :name="$bloodbank->name"
                     :description="$bloodbank->about"
                     img="img/hemepar.png"
