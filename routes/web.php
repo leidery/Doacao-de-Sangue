@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\BloodbankController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -21,9 +22,14 @@ Route::get('/sobre-nos', function () { return view('website.pages.about-us'); })
 Route::get('/duvidas-frequentes', function () { return view('website.pages.faq'); });
 Route::get('/politica-de-privacidade', function () { return view('website.pages.privacy-policy'); });
 
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth', 'verified'])->name('dashboard');
+// Route::get('/dashboard', function () {
+//     return view('dashboard');
+// })->middleware(['auth', 'verified'])->name('dashboard');
+
+Route::middleware('auth', 'verified')->group(function () {
+    Route::get('/dashboard', [BloodbankController::class, 'index'])->name('dashboard');
+    Route::get('/procurar-hemocentro', [BloodbankController::class, 'search'])->name('search');
+});
 
 Route::middleware('auth')->group(function () {
     Route::get('/perfil', [ProfileController::class, 'edit'])->name('profile.edit');
