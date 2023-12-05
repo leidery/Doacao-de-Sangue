@@ -35,4 +35,5 @@
             </p>
         </div>
     </div>
+    @include('website.components.cto-donation')
 </x-guest-layout>

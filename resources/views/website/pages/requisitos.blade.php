@@ -34,4 +34,5 @@
     </div>
 
     @include('website.pages.faq.duvidas')
+    @include('website.components.cto-donation')
 </x-guest-layout>

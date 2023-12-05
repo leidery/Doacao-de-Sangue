@@ -25,4 +25,6 @@
             <button class="btn btn-danger btn-blood mt-3 px-5">Agendar doação</button>
         </a>
     </div>
+
+    @include('website.components.cto-donation')
 </x-guest-layout>
