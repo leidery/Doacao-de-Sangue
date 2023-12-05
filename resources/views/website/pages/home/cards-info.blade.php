@@ -8,10 +8,9 @@
             class="col col-md-3 my-3"
         >
             <p>
-                Está em dúvida se pode doar sangue?
-                Faça agora um teste online para
-                verificar se está apto a doar sangue
-                no hemobanco escolhido:
+                Está em dúvida se pode doar?
+                <br>
+                Faça agora um teste online:
             </p>
 
             <a href="{{ url('teste-posso-doar') }}">
@@ -26,10 +25,14 @@
             class="col col-md-3 my-3"
         >
             <p>
-                Ao informar sua localização,
-                você obterá todos os hemobancos perto de você
-                e os horários de funcionamento!
+                Com a localização informada,
+                você sabe de todos os locais
+                e os horários!
             </p>
+
+            <a href="{{ url('locais') }}">
+                <button class="btn btn-danger btn-blood mt-3 px-5 w-100">Ver locais</button>
+            </a>
         </x-website.card-info>
 
         <x-website.card-info
@@ -43,6 +46,10 @@
                 Com o hemobanco escolhido,
                 você pode agendar sua coleta online!
             </p>
+
+            <a href="{{ url('login') }}" class="mt-auto">
+                <button class="btn btn-danger btn-blood mt-3 px-5 w-100">Agendar doação</button>
+            </a>
         </x-website.card-info>
     </div>
 </div>
