@@ -19,7 +19,7 @@ Route::get('/', function () { return view('website.pages.home'); });
 Route::get('/teste-posso-doar', function () { return view('website.pages.teste'); });
 Route::get('/requisitos-para-doacao', function () { return view('website.pages.requisitos'); });
 Route::get('/sobre-nos', function () { return view('website.pages.about-us'); });
-Route::get('/duvidas-frequentes', function () { return view('website.pages.faq'); });
+Route::get('/duvidas-frequentes', function () { return view('website.pages.faq.index'); });
 Route::get('/politica-de-privacidade', function () { return view('website.pages.privacy-policy'); });
 
 // Route::get('/dashboard', function () {
