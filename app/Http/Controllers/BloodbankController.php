@@ -30,4 +30,19 @@ class BloodbankController extends Controller
             'cep' => $cep
         ]);
     }
+
+    public function  locations() : View
+    {
+        $bloodbanks = DB::table('bloodbanks')->get();
+//         $cep = $request->input('cep');
+//         $bloodbanks = DB::table('bloodbanks')
+//                         ->where('cep', '=', $cep)
+//                         ->get();
+// 
+        return view('website.pages.bloodbanks.index', [
+            'bloodbanks' => $bloodbanks,
+            // 'cep' => $cep
+        ]);
+    }
+
 }

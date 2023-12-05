@@ -1,5 +1,5 @@
 <x-guest-layout>
-    <x-website.header bgImg="img/bg-header.png">
+    <x-website.header bgImg="{{ asset('img/bg-header.png') }}">
         <h1>Teste doação de sangue</h1>
     </x-website.header>
 

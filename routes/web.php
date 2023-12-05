@@ -16,7 +16,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () { return view('website.pages.home.index'); });
-Route::get('/locais', function () { return view('website.pages.bloodbanks.index'); });
+Route::get('/locais', [BloodbankController::class, 'locations'])->name('locations');
+Route::get('/locais/hemepar', function () { return view('website.pages.bloodbanks.sample'); });
 Route::get('/teste-posso-doar', function () { return view('website.pages.quiz.index'); });
 Route::get('/requisitos-para-doacao', function () { return view('website.pages.requisitos'); });
 Route::get('/sobre-nos', function () { return view('website.pages.about-us'); });
