@@ -3,5 +3,7 @@
         <h1>Teste doação de sangue</h1>
     </x-website.header>
 
-    <p>Em construção!</p>
+    <div class="container py-5">
+        <p>Em breve!</p>
+    </div>
 </x-guest-layout>
