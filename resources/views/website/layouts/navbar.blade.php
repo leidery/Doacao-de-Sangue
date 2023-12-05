@@ -32,7 +32,7 @@
                       <a href="{{ route('login') }}" class="dropdown-item">Login</a>
   
                       @if (Route::has('register'))
-                          <a href="{{ route('register') }}" class="dropdown-item">Register</a>
+                          <a href="{{ route('register') }}" class="dropdown-item">Cadastre-se</a>
                       @endif
                   @endauth
               @endif
