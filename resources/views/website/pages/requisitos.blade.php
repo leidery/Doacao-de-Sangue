@@ -27,4 +27,11 @@
             <li>Estar alimentado e evitar consumo de alimentos gordurosos 3 horas antes da doação</li>
         </ul>
     </div>
+
+
+    <div class="container">
+        <h2>Dúvidas frequentes</h2>
+    </div>
+
+    @include('website.pages.faq.duvidas')
 </x-guest-layout>
