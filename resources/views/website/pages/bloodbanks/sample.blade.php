@@ -11,32 +11,35 @@
                     <h1>Hemepar</h1>
                 </div>
 
-                <div class="mb-4">
+                <div class="mb-3">
                     <h4 class="fw-light">SITUAÇÃO DE ESTOQUE</h4>
                     <h5 class="fw-light">Estável</h5>
                 </div>
 
-                <div class="mb-4">
+                <div class="mb-3">
                     <p class="fw-bold m-0">Localização da Unidade de coleta</p>
                     <p>
                         Tv. João Prosdócimo, 145 - Alto da XV, Curitiba - PR, 80045-145
                     </p>
                 </div>
 
-                <div class="mb-4">
+                <div class="mb-3">
                     <p class="fw-bold m-0">Horário de funcionamento unidade de coleta</p>
 
                     <p>Segunda a Sábado: 7:30h às 18h</p>
                     <p>Domingo: Fechado</p>
                 </div>
 
-                <div class="mb-4">
+                <div class="mb-3">
                     <p class="fw-bold m-0">Contato Unidade de coleta</p>
                     <p>0800 645 4555</p>
                 </div>
 
-                <div class="mb-4">
-                    <p>Atualizado em 20/11/2023 às 6h</p>
+                <div class="mb-3">
+                    <a href="{{ url('login') }}">
+                        <button class="btn btn-danger btn-blood mt-3 px-5">Agendar doação</button>
+                    </a>
+                     <p style="font-size: 12px; margin-top: 2px">* Atualizado em 20/11/2023 às 6h</p>
                 </div>
             </div>
 
