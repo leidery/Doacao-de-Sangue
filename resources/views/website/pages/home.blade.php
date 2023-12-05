@@ -10,4 +10,5 @@
 
     @include('website.pages.home.doe-sangue')
     @include('website.pages.home.cards-info')
+    @include('website.components.cto-donation')
 </x-guest-layout>

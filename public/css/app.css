@@ -8,6 +8,10 @@ h2 {
     font-size: 1.5rem;
 }
 
+img {
+    width: 100%;
+}
+
 .header {
     height: 55vh;
 
@@ -71,4 +75,25 @@ footer > * {
     height: 300px;
     background-position: center;
     background-size: cover;
+}
+
+.banner_cto_donation {
+    display: flex;
+    position: relative;
+    height: 280px;
+    align-items: center;
+
+    background-color: #F9F4F1;
+}
+
+.banner_cto_donation > * {
+    margin: auto;
+}
+
+.banner_cto_donation > img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 250px;
+    width: auto;
 }
