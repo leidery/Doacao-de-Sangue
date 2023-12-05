@@ -1,7 +1,7 @@
-<div class="container py-5">
+<div class="container my-5">
     <div class="row">
         <div class="col-12 col-md-6">
-            <h1>Doe sangue 🩸</h1>
+            <h1 class="mb-5">Doe sangue 🩸</h1>
             
             <p>
                 Somos um grupo formado por alunos de ADS e Eng. de Software da uniOpet!

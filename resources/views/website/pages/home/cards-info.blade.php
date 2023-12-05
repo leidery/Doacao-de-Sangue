@@ -5,7 +5,7 @@
             subtitle="Como sei se"
             icon="icons/computador-saude.svg"
             iconAlt="ícone de coleta de sangue"
-            class="col col-md-3 my-3"
+            class="col-12 col-md-3 my-3"
         >
             <p>
                 Está em dúvida se pode doar?
@@ -22,7 +22,7 @@
             subtitle="Escolhendo o"
             icon="icons/location-heart.svg"
             iconAlt="ícone de localização em formato de coração"
-            class="col col-md-3 my-3"
+            class="col-12 col-md-3 my-3"
         >
             <p>
                 Com a localização informada,
@@ -40,7 +40,7 @@
             subtitle="Agendamento da"
             icon="icons/coleta-sangue.svg"
             iconAlt="ícone de coleta de sangue"
-            class="col col-md-3 my-3"
+            class="col-12 col-md-3 my-3"
         >
             <p>
                 Com o hemobanco escolhido,
